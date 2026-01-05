@@ -25,7 +25,7 @@ class _Splashscreen4State extends State<Splashscreen4> {
                 shape: BoxShape.circle,
                 color: Colors.green,
                 image: DecorationImage(
-                  image: AssetImage("images/image4.jpeg"),
+                  image: AssetImage("images/wisata_jogya.jpg"),
                   fit: BoxFit.cover,
                 ),
               ),

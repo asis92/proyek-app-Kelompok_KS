@@ -68,6 +68,7 @@ flutter:
     - assets/images/hotel2.jpg
     - assets/images/hotel3.jpg
     - assets/images/hotel4.jpg
+    - assets/images/wisata_jogya.jpg
 
   # To add assets to your application, add an assets section, like this:
   # assets:
