@@ -10,7 +10,7 @@ class SplashScreen5 extends StatefulWidget {
 class _SplashScreen5State extends State<SplashScreen5>
     with SingleTickerProviderStateMixin {
   late AnimationController _controller;
-   late Animation<double> _fadeAnimation;
+  late Animation<double> _fadeAnimation;
 
   @override
   void initState() {
@@ -50,9 +50,9 @@ class _SplashScreen5State extends State<SplashScreen5>
       ),
     );
   }
-   @override
+
+  @override
   Widget build(BuildContext context) {
-   
     return Scaffold(
       body: Container(
         decoration: const BoxDecoration(
@@ -63,41 +63,82 @@ class _SplashScreen5State extends State<SplashScreen5>
           ),
         ),
         child: Center(
-            child: FadeTransition(
-                opacity: _fadeAnimation,
-                child: Column(
-                    mainAxisAlignment: MainAxisAlignment.center,
-                    children:[
-                        const Icon(Icons.hotel, size: 100, color: Colors.white),
-                  const SizedBox(height: 24),
-                  const Text(
-                    'Booking Hotel',
-                    style: TextStyle(
-                      fontSize: 42,
-                      fontWeight: FontWeight.bold,
-                      color: Colors.white,
-                      letterSpacing: 2,
-                    ),
+          child: FadeTransition(
+            opacity: _fadeAnimation,
+            child: Column(
+              mainAxisAlignment: MainAxisAlignment.center,
+              children: [
+                const Icon(Icons.hotel, size: 100, color: Colors.white),
+                const SizedBox(height: 24),
+                const Text(
+                  'Booking Hotel',
+                  style: TextStyle(
+                    fontSize: 42,
+                    fontWeight: FontWeight.bold,
+                    color: Colors.white,
+                    letterSpacing: 2,
                   ),
-                  const SizedBox(height: 16),
-                  const Text(
-                    'Temukan Menginap Impianmu',
-                    style: TextStyle(fontSize: 20, color: Colors.white70),
-                  ),
-                  const SizedBox(height: 20),
-                  SizedBox(height: 20),
-
-                  Container(
-                        height: 10,
-                        width: 10,
-                        decoration: const BoxDecoration(
-                          color: Color.fromARGB(255, 7, 243, 109),
-                          shape: BoxShape.circle,
-                        ),
+                ),
+                const SizedBox(height: 16),
+                const Text(
+                  'Temukan Menginap Impianmu',
+                  style: TextStyle(fontSize: 20, color: Colors.white70),
+                ),
+                const SizedBox(height: 20),
+                SizedBox(height: 20),
+                Row(
+                  mainAxisAlignment: MainAxisAlignment.center,
+                  children: [
+                    Container(
+                      height: 10,
+                      width: 10,
+                      decoration: const BoxDecoration(
+                        color: Color.fromARGB(255, 211, 219, 215),
+                        shape: BoxShape.circle,
                       ),
-                    ]
-                )
-            )
+                    ),
+                    SizedBox(width: 10),
+                    Container(
+                      height: 10,
+                      width: 10,
+                      decoration: const BoxDecoration(
+                        color: Color.fromARGB(255, 211, 219, 215),
+                        shape: BoxShape.circle,
+                      ),
+                    ),
+                    SizedBox(width: 10),
+                    Container(
+                      height: 10,
+                      width: 10,
+                      decoration: const BoxDecoration(
+                        color: Color.fromARGB(255, 211, 219, 215),
+                        shape: BoxShape.circle,
+                      ),
+                    ),
+                    SizedBox(width: 10),
+                    Container(
+                      height: 10,
+                      width: 10,
+                      decoration: const BoxDecoration(
+                        color: Color.fromARGB(255, 211, 219, 215),
+                        shape: BoxShape.circle,
+                      ),
+                    ),
+                    SizedBox(width: 10),
+                    Container(
+                      height: 10,
+                      width: 10,
+                      decoration: const BoxDecoration(
+                        color: Color.fromARGB(255, 7, 243, 109),
+                        shape: BoxShape.circle,
+                      ),
+                    ),
+                  ],
+                ),
+                const SizedBox(height: 30),
+              ],
+            ),
+          ),
         ),
       ),
     );
