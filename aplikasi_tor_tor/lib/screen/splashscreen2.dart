@@ -91,14 +91,15 @@ class MySplashScreenUAS extends StatelessWidget {
               ],
             ),
             Container(
+              width: double.infinity,
               child: ElevatedButton(
                 onPressed: (){},
                 style: ElevatedButton.styleFrom(
                   backgroundColor: Colors.green,
                 ),
-                child: Text("text",
+                child: Text("Lanjut",
                   style: TextStyle(
-                    fontSize: 10.0,
+                    fontSize: 14.0,
                   ),
                 ),
                 ),
