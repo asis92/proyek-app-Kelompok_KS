@@ -50,7 +50,7 @@ class MySplashScreenUAS extends StatelessWidget {
                   height: 10,
                   decoration: BoxDecoration(
                     shape: BoxShape.circle,
-                    color: Colors.green,
+                    color: Colors.green[100],
                   ),
                 ),
                 SizedBox(width: 10),
@@ -68,7 +68,7 @@ class MySplashScreenUAS extends StatelessWidget {
                   height: 10,
                   decoration: BoxDecoration(
                     shape: BoxShape.circle,
-                    color: Colors.green,
+                    color: Colors.green[100],
                   ),
                 ),
                 SizedBox(width: 10),
@@ -77,7 +77,7 @@ class MySplashScreenUAS extends StatelessWidget {
                   height: 10,
                   decoration: BoxDecoration(
                     shape: BoxShape.circle,
-                    color: Colors.green,
+                    color: Colors.green[100],
                   ),
                 ),
                 SizedBox(width: 10),
@@ -86,7 +86,7 @@ class MySplashScreenUAS extends StatelessWidget {
                   height: 10,
                   decoration: BoxDecoration(
                     shape: BoxShape.circle,
-                    color: Colors.green,
+                    color: Colors.green[100],
                   ),
                 ),
                 SizedBox(width: 10),
@@ -107,7 +107,8 @@ class MySplashScreenUAS extends StatelessWidget {
                   ),
                 ),
                 ),
-            )
+            ),
+            SizedBox(height: 70),
           ],
         ),
       ),
