@@ -19,7 +19,10 @@ class MySplashScreenUAS extends StatelessWidget {
               decoration: BoxDecoration(
                 shape: BoxShape.circle,
                 color: Colors.grey,
-                
+                image: DecorationImage(
+                  image: AssetImage("images/mr.robot.png"),
+                  fit: BoxFit.cover,
+                )
               ),
             )
           ],
