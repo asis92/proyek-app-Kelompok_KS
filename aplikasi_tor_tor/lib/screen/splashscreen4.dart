@@ -11,7 +11,7 @@ class _Splashscreen1State extends State<Splashscreen1> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(title: const Text("Splash Screen 1"), actions: const []),
+      appBar: AppBar(title: const Text("Splash Screen 4"), actions: const []),
       body: Center(
         child: Column(
           mainAxisAlignment: MainAxisAlignment.center,
@@ -25,7 +25,7 @@ class _Splashscreen1State extends State<Splashscreen1> {
                 shape: BoxShape.circle,
                 color: Colors.green,
                 image: DecorationImage(
-                  image: AssetImage("images/yugioh.png"),
+                  image: AssetImage("images/image4.jpeg"),
                   fit: BoxFit.cover,
                 ),
               ),
