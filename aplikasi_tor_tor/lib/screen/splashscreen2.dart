@@ -7,7 +7,7 @@ class MySplashScreenUAS extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: const Text("Tugas UAS"),
+        title: const Text("Tugas UAS Grafica Jati Sugiyarto"),
       ),
       body: Center(
         child: Column(
@@ -22,9 +22,16 @@ class MySplashScreenUAS extends StatelessWidget {
                 image: DecorationImage(
                   image: AssetImage("images/mr.robot.png"),
                   fit: BoxFit.cover,
-                )
+                ),
               ),
-            )
+            ),
+            SizedBox(height: 10),
+            Text("MR.ROBOT",
+              style: TextStyle(
+                fontSize: 35.0,
+                fontWeight: FontWeight.bold,
+              ),
+            ),
           ],
         ),
       ),
