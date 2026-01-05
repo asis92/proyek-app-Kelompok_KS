@@ -1,3 +1,3 @@
-#Aplikasi_tor_tor
-Nama : Anggie
-Nama : Jejen 
+# Aplikasi_tor_tor
+
+Nama : Yehezkiel/feature/splash3
