@@ -11,7 +11,9 @@ class MySplashScreenUAS extends StatelessWidget {
       ),
       body: Center(
         child: Column(
+          mainAxisAlignment: MainAxisAlignment.center,
           children: [
+            Spacer(),
             SizedBox(height: 50),
             Container(
               width: 250,
@@ -90,7 +92,9 @@ class MySplashScreenUAS extends StatelessWidget {
                 SizedBox(width: 10),
               ],
             ),
+            SizedBox(height: 10),
             Container(
+              margin: EdgeInsets.only(left: 40,right: 40),
               width: double.infinity,
               child: ElevatedButton(
                 onPressed: (){},
