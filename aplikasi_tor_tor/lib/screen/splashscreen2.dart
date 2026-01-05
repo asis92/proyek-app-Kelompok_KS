@@ -7,7 +7,7 @@ class MySplashScreenUAS extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: const Text("Tugas UAS Grafica Jati Sugiyarto"),
+        title: const Text("UAS Grafica Jati Sugiyarto"),
       ),
       body: Center(
         child: Column(
@@ -30,6 +30,13 @@ class MySplashScreenUAS extends StatelessWidget {
               style: TextStyle(
                 fontSize: 35.0,
                 fontWeight: FontWeight.bold,
+              ),
+            ),
+            SizedBox(height: 10),
+            Text("UAS \n Grafica Jati Sugiyarto",
+              style: TextStyle(
+                fontSize: 35.0,
+                fontWeight: FontWeight.normal,
               ),
             ),
           ],
