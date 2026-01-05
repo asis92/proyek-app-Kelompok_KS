@@ -1,11 +1,11 @@
-import 'package:aplikasi_tor_tor/main.dart';
+import 'package:flutter/material.dart';
 
 void main() {
-  runApp(const MyApp());
+  runApp(const aplikasi_tor_tor());
 }
 
-class MyApp extends StatelessWidget {
-  const MyApp({super.key});
+class aplikasi_tor_tor extends StatelessWidget {
+  const aplikasi_tor_tor({super.key});
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
