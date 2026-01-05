@@ -11,6 +11,7 @@ class _SplashScreen5State extends State<SplashScreen5>
     with SingleTickerProviderStateMixin {
   late AnimationController _controller;
   late Animation<double> _fadeAnimation;
+  
 
   @override
   void initState() {
@@ -136,6 +137,35 @@ class _SplashScreen5State extends State<SplashScreen5>
                   ],
                 ),
                 const SizedBox(height: 30),
+                SizedBox(
+                    width: 220,
+                    height: 45,
+                    child: ElevatedButton(
+                      onPressed: () {
+                        Navigator.pushReplacement(
+                          context,
+                          MaterialPageRoute(
+                            builder: (context) => const Login(),
+                          ),
+                        );
+                      },
+                      style: ElevatedButton.styleFrom(
+                        backgroundColor: Colors.green,
+                        shape: RoundedRectangleBorder(
+                          borderRadius: BorderRadius.circular(20),
+                        ),
+                      ),
+
+                      child: const Text(
+                        'Welcome',
+                        style: TextStyle(
+                          fontSize: 18,
+                          color: Colors.white,
+                          fontWeight: FontWeight.bold,
+                        ),
+                      ),
+                    ),
+                  ),
               ],
             ),
           ),
