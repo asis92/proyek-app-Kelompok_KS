@@ -70,8 +70,39 @@ class MySplashScreenUAS extends StatelessWidget {
                   ),
                 ),
                 SizedBox(width: 10),
+                Container(
+                  width: 10,
+                  height: 10,
+                  decoration: BoxDecoration(
+                    shape: BoxShape.circle,
+                    color: Colors.green,
+                  ),
+                ),
+                SizedBox(width: 10),
+                Container(
+                  width: 10,
+                  height: 10,
+                  decoration: BoxDecoration(
+                    shape: BoxShape.circle,
+                    color: Colors.green,
+                  ),
+                ),
+                SizedBox(width: 10),
               ],
             ),
+            Container(
+              child: ElevatedButton(
+                onPressed: (){},
+                style: ElevatedButton.styleFrom(
+                  backgroundColor: Colors.green,
+                ),
+                child: Text("text",
+                  style: TextStyle(
+                    fontSize: 10.0,
+                  ),
+                ),
+                ),
+            )
           ],
         ),
       ),
