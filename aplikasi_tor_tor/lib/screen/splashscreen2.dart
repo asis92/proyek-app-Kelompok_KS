@@ -34,6 +34,7 @@ class MySplashScreenUAS extends StatelessWidget {
             ),
             SizedBox(height: 10),
             Text("UAS \n Grafica Jati Sugiyarto",
+            textAlign: TextAlign.center,
               style: TextStyle(
                 fontSize: 35.0,
                 fontWeight: FontWeight.normal,
