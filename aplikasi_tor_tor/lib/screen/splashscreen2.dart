@@ -39,6 +39,19 @@ class MySplashScreenUAS extends StatelessWidget {
                 fontWeight: FontWeight.normal,
               ),
             ),
+            Row(
+              children: [
+                Container(
+                  width: 10,
+                  height: 10,
+                  decoration: BoxDecoration(
+                    shape: BoxShape.circle,
+                    color: Colors.green,
+                  ),
+                ),
+                SizedBox(width: 10),
+              ],
+            ),
           ],
         ),
       ),
