@@ -1,13 +1,13 @@
 import 'package:flutter/material.dart';
 
-class Splashscreen1 extends StatefulWidget {
-  const Splashscreen1({super.key});
+class Splashscreen4 extends StatefulWidget {
+  const Splashscreen4({super.key});
 
   @override
-  State<Splashscreen1> createState() => _Splashscreen1State();
+  State<Splashscreen4> createState() => _Splashscreen4State();
 }
 
-class _Splashscreen1State extends State<Splashscreen1> {
+class _Splashscreen4State extends State<Splashscreen4> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -40,7 +40,7 @@ class _Splashscreen1State extends State<Splashscreen1> {
               ),
             ),
             Text(
-              "Ini Adalah Splash Screen Milik \n Asis Dwi Saputra",
+              "Ini Adalah Splash Screen Milik \n Anggie Aditya Saputra",
               textAlign: TextAlign.center,
               style: TextStyle(
                 fontSize: 25.0,
