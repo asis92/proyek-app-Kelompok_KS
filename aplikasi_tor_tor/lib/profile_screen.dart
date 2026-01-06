@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-
 class Profile extends StatelessWidget {
   const Profile({super.key});
 
@@ -18,7 +17,7 @@ class Profile extends StatelessWidget {
       body: SingleChildScrollView(
         child: Column(
           children: [
-            // ===== HEADER PROFILE =====
+           
             Container(
               width: double.infinity,
               padding: const EdgeInsets.symmetric(vertical: 30),
@@ -55,7 +54,7 @@ class Profile extends StatelessWidget {
 
             const SizedBox(height: 25),
 
-            // ===== INFO KARYAWAN =====
+            // INFO KARYAWAN 
             _infoCard(
               icon: Icons.badge,
               title: 'ID Karyawan',
@@ -96,15 +95,14 @@ class Profile extends StatelessWidget {
 
             const SizedBox(height: 30),
 
-            // ===== LOGOUT BUTTON =====
-            Padding(
+              Padding(
               padding: const EdgeInsets.symmetric(horizontal: 40),
               child: SizedBox(
                 width: double.infinity,
                 height: 45,
                 child: ElevatedButton(
                   onPressed: () {
-                    Navigator.pop(context); // kembali ke login
+                    // kembali ke dashboard
                   },
                   style: ElevatedButton.styleFrom(
                     backgroundColor: Colors.redAccent,
@@ -131,7 +129,7 @@ class Profile extends StatelessWidget {
     );
   }
 
-  // ===== WIDGET INFO =====
+  
   static Widget _infoCard({
     required IconData icon,
     required String title,
@@ -145,8 +143,7 @@ class Profile extends StatelessWidget {
         borderRadius: BorderRadius.circular(15),
         boxShadow: [
           BoxShadow(
-            color: Colors.black.withOpacity(0.05),
-            blurRadius: 5,
+            color: const Color.fromARGB(255, 0, 0, 0),
             offset: const Offset(0, 3),
           ),
         ],
