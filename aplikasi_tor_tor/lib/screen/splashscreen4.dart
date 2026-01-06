@@ -2,6 +2,8 @@ import 'package:flutter/material.dart';
 import 'package:aplikasi_tor_tor/screen/splashscreen5.dart';
 
 class SplashScreen4 extends StatelessWidget {
+  const SplashScreen4({super.key});
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
