@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
+import 'package:aplikasi_tor_tor/screen/splashscreen5.dart';
 
-class SplashScreen extends StatelessWidget {
+class SplashScreen4 extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -61,7 +62,9 @@ class SplashScreen extends StatelessWidget {
                     onPressed: () {
                       Navigator.push(
                         context,
-                        MaterialPageRoute(builder: (context) => SplashScreen()),
+                        MaterialPageRoute(
+                          builder: (context) => SplashScreen5(),
+                        ),
                       );
                     },
                     child: const Text(
