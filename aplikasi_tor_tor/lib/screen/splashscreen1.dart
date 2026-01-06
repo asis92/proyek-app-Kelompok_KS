@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:aplikasi_tor_tor/screen/splashscreen2.dart';
 
 class Splashscreen1 extends StatefulWidget {
   const Splashscreen1({super.key});
@@ -110,7 +111,7 @@ class _Splashscreen1State extends State<Splashscreen1> {
                     Navigator.push(
                       context,
                       MaterialPageRoute(
-                        builder: (context) => MySplashscreen2(),
+                        builder: (context) => MySplashScreenUAS(),
                       ),
                     );
                   },
