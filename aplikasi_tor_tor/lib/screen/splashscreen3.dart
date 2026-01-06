@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart'; // Import Flutter Material Package
-import 'profil.dart'; // Import halaman profil
+import 'package:aplikasi_tor_tor/screen/splashscreen4.dart'; // Import halaman profil
 
 class SplashScreen extends StatelessWidget {
   // Kelas SplashScreen
@@ -97,9 +97,7 @@ class SplashScreen extends StatelessWidget {
                     // Navigasi ke halaman TeamProfilePage saat tombol ditekan
                     Navigator.push(
                       context,
-                      MaterialPageRoute(
-                        builder: (context) => const TeamProfilePage(),
-                      ),
+                      MaterialPageRoute(builder: (context) => SplashScreen4()),
                     );
                   },
                   child: const Text(

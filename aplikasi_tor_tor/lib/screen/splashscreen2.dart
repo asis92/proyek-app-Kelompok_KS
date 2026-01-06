@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:aplikasi_tor_tor/screen/splashscreen3.dart';
 
 class MySplashScreenUAS extends StatelessWidget {
   const MySplashScreenUAS({super.key});
@@ -6,9 +7,7 @@ class MySplashScreenUAS extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(
-        title: const Text("UAS Grafica Jati Sugiyarto"),
-      ),
+      appBar: AppBar(title: const Text("UAS Grafica Jati Sugiyarto")),
       body: Center(
         child: Column(
           mainAxisAlignment: MainAxisAlignment.center,
@@ -28,19 +27,15 @@ class MySplashScreenUAS extends StatelessWidget {
               ),
             ),
             SizedBox(height: 10),
-            Text("MR.ROBOT",
-              style: TextStyle(
-                fontSize: 35.0,
-                fontWeight: FontWeight.bold,
-              ),
+            Text(
+              "MR.ROBOT",
+              style: TextStyle(fontSize: 35.0, fontWeight: FontWeight.bold),
             ),
             SizedBox(height: 10),
-            Text("UAS \n Grafica Jati Sugiyarto",
-            textAlign: TextAlign.center,
-              style: TextStyle(
-                fontSize: 35.0,
-                fontWeight: FontWeight.normal,
-              ),
+            Text(
+              "UAS \n Grafica Jati Sugiyarto",
+              textAlign: TextAlign.center,
+              style: TextStyle(fontSize: 35.0, fontWeight: FontWeight.normal),
             ),
             Row(
               mainAxisAlignment: MainAxisAlignment.center,
@@ -94,19 +89,18 @@ class MySplashScreenUAS extends StatelessWidget {
             ),
             SizedBox(height: 10),
             Container(
-              margin: EdgeInsets.only(left: 40,right: 40),
+              margin: EdgeInsets.only(left: 40, right: 40),
               width: double.infinity,
               child: ElevatedButton(
-                onPressed: (){},
-                style: ElevatedButton.styleFrom(
-                  backgroundColor: Colors.green,
-                ),
-                child: Text("Lanjut",
-                  style: TextStyle(
-                    fontSize: 14.0,
-                  ),
-                ),
-                ),
+                onPressed: () {
+                  Navigator.push(
+                    context,
+                    MaterialPageRoute(builder: (context) => SplashScreen()),
+                  );
+                },
+                style: ElevatedButton.styleFrom(backgroundColor: Colors.green),
+                child: Text("Lanjut", style: TextStyle(fontSize: 14.0)),
+              ),
             ),
             SizedBox(height: 70),
           ],

@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:aplikasi_tor_tor/screen/splashscreen1.dart';
 
 class SplashScreen5 extends StatefulWidget {
   const SplashScreen5({super.key});
@@ -11,7 +12,6 @@ class _SplashScreen5State extends State<SplashScreen5>
     with SingleTickerProviderStateMixin {
   late AnimationController _controller;
   late Animation<double> _fadeAnimation;
-  
 
   @override
   void initState() {
@@ -36,7 +36,6 @@ class _SplashScreen5State extends State<SplashScreen5>
     _controller.dispose();
     super.dispose();
   }
-
 
   @override
   Widget build(BuildContext context) {
@@ -124,34 +123,34 @@ class _SplashScreen5State extends State<SplashScreen5>
                 ),
                 const SizedBox(height: 30),
                 SizedBox(
-                    width: 220,
-                    height: 45,
-                    child: ElevatedButton(
-                      onPressed: () {
-                        Navigator.pushReplacement(
-                          context,
-                          MaterialPageRoute(
-                            builder: (context) => const Login(),
-                          ),
-                        );
-                      },
-                      style: ElevatedButton.styleFrom(
-                        backgroundColor: Colors.green,
-                        shape: RoundedRectangleBorder(
-                          borderRadius: BorderRadius.circular(20),
+                  width: 220,
+                  height: 45,
+                  child: ElevatedButton(
+                    onPressed: () {
+                      Navigator.pushReplacement(
+                        context,
+                        MaterialPageRoute(
+                          builder: (context) => Splashscreen1(),
                         ),
+                      );
+                    },
+                    style: ElevatedButton.styleFrom(
+                      backgroundColor: Colors.green,
+                      shape: RoundedRectangleBorder(
+                        borderRadius: BorderRadius.circular(20),
                       ),
+                    ),
 
-                      child: const Text(
-                        'Welcome',
-                        style: TextStyle(
-                          fontSize: 18,
-                          color: Colors.white,
-                          fontWeight: FontWeight.bold,
-                        ),
+                    child: const Text(
+                      'Welcome',
+                      style: TextStyle(
+                        fontSize: 18,
+                        color: Colors.white,
+                        fontWeight: FontWeight.bold,
                       ),
                     ),
                   ),
+                ),
               ],
             ),
           ),

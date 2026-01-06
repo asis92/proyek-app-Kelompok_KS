@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:aplikasi_tor_tor/screen/splashscreen2.dart';
 
 class Splashscreen1 extends StatefulWidget {
   const Splashscreen1({super.key});
@@ -11,7 +12,10 @@ class _Splashscreen1State extends State<Splashscreen1> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(title: const Text("Splash Screen 1"), actions: const []),
+      appBar: AppBar(
+        title: const Text("Halaman Pertama SplashScreen"),
+        actions: const [],
+      ),
       body: Center(
         child: Column(
           mainAxisAlignment: MainAxisAlignment.center,
@@ -106,7 +110,14 @@ class _Splashscreen1State extends State<Splashscreen1> {
                 width: double.infinity,
 
                 child: ElevatedButton(
-                  onPressed: () {},
+                  onPressed: () {
+                    Navigator.push(
+                      context,
+                      MaterialPageRoute(
+                        builder: (context) => MySplashScreenUAS(),
+                      ),
+                    );
+                  },
                   style: ElevatedButton.styleFrom(
                     backgroundColor: Colors.green,
                   ),
