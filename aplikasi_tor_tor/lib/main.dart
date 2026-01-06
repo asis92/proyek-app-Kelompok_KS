@@ -1,4 +1,4 @@
-import 'package:aplikasi_tor_tor/screen/splashscreen2.dart';
+import 'package:aplikasi_tor_tor/screen/splashscreen1.dart';
 import 'package:flutter/material.dart';
 
 void main() {
@@ -13,11 +13,11 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       title: "Uas Kelompok KS",
       theme: ThemeData(
-      useMaterial3: true,
-      colorScheme: ColorScheme.fromSeed(seedColor: Colors.red),
+        useMaterial3: true,
+        colorScheme: ColorScheme.fromSeed(seedColor: Colors.red),
       ),
       debugShowCheckedModeBanner: false,
-      home: MySplashScreenUAS(), //memanggil nama class splash screen 1
+      home: Splashscreen1(), //memanggil nama class splash screen 1
     );
   }
 }
