@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart'; // Import Flutter Material Package
-import 'profil.dart'; // Import halaman profil
+import '../profil.dart'; // Import halaman profil
 
 class SplashScreen extends StatelessWidget {
   // Kelas SplashScreen
