@@ -51,7 +51,6 @@ class Profile extends StatelessWidget {
                 ],
               ),
             ),
-
             const SizedBox(height: 25),
 
             // INFO KARYAWAN 
