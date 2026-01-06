@@ -12,7 +12,10 @@ class _Splashscreen1State extends State<Splashscreen1> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(title: const Text("Splash Screen 1"), actions: const []),
+      appBar: AppBar(
+        title: const Text("Halaman Pertama SplashScreen"),
+        actions: const [],
+      ),
       body: Center(
         child: Column(
           mainAxisAlignment: MainAxisAlignment.center,
