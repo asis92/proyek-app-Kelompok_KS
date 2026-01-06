@@ -22,12 +22,18 @@ class _SplashScreen5State extends State<SplashScreen5>
       duration: const Duration(seconds: 2),
     );
 
+    // ✅ INISIALISASI FADE ANIMATION (INI YANG HILANG)
+    _fadeAnimation = Tween<double>(begin: 0.0, end: 1.0).animate(_controller);
+
     _controller.forward();
 
+    // ✅ Navigasi otomatis setelah splash
     Future.delayed(const Duration(seconds: 4), () {
-      if (mounted) {
-        Navigator.pushReplacementNamed(context, '');
-      }
+      if (!mounted) return;
+      Navigator.pushReplacement(
+        context,
+        MaterialPageRoute(builder: (context) => Splashscreen1()),
+      );
     });
   }
 
@@ -70,57 +76,26 @@ class _SplashScreen5State extends State<SplashScreen5>
                   'Temukan Menginap Impianmu',
                   style: TextStyle(fontSize: 20, color: Colors.white70),
                 ),
-                const SizedBox(height: 20),
-                SizedBox(height: 20),
+                const SizedBox(height: 30),
+
+                // indikator
                 Row(
                   mainAxisAlignment: MainAxisAlignment.center,
-                  children: [
-                    Container(
+                  children: List.generate(5, (index) {
+                    return Container(
+                      margin: const EdgeInsets.symmetric(horizontal: 5),
                       height: 10,
                       width: 10,
-                      decoration: const BoxDecoration(
-                        color: Color.fromARGB(255, 211, 219, 215),
+                      decoration: BoxDecoration(
+                        color: index == 4
+                            ? const Color.fromARGB(255, 7, 243, 109)
+                            : const Color.fromARGB(255, 211, 219, 215),
                         shape: BoxShape.circle,
                       ),
-                    ),
-                    SizedBox(width: 10),
-                    Container(
-                      height: 10,
-                      width: 10,
-                      decoration: const BoxDecoration(
-                        color: Color.fromARGB(255, 211, 219, 215),
-                        shape: BoxShape.circle,
-                      ),
-                    ),
-                    SizedBox(width: 10),
-                    Container(
-                      height: 10,
-                      width: 10,
-                      decoration: const BoxDecoration(
-                        color: Color.fromARGB(255, 211, 219, 215),
-                        shape: BoxShape.circle,
-                      ),
-                    ),
-                    SizedBox(width: 10),
-                    Container(
-                      height: 10,
-                      width: 10,
-                      decoration: const BoxDecoration(
-                        color: Color.fromARGB(255, 211, 219, 215),
-                        shape: BoxShape.circle,
-                      ),
-                    ),
-                    SizedBox(width: 10),
-                    Container(
-                      height: 10,
-                      width: 10,
-                      decoration: const BoxDecoration(
-                        color: Color.fromARGB(255, 7, 243, 109),
-                        shape: BoxShape.circle,
-                      ),
-                    ),
-                  ],
+                    );
+                  }),
                 ),
+
                 const SizedBox(height: 30),
                 SizedBox(
                   width: 220,
@@ -140,7 +115,6 @@ class _SplashScreen5State extends State<SplashScreen5>
                         borderRadius: BorderRadius.circular(20),
                       ),
                     ),
-
                     child: const Text(
                       'Welcome',
                       style: TextStyle(
