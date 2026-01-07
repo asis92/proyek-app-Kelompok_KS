@@ -55,6 +55,19 @@ class DataProfile2 extends StatelessWidget {
                                 color: Colors.yellow,
                               ),
                             ),
+                            Container(
+                              decoration: BoxDecoration(
+                                color: Colors.black,
+                                borderRadius: BorderRadius.circular(20),
+                              ),
+                              child: Text("Instagram : @GraficaJS",
+                                style: TextStyle(
+                                  fontSize: 16.0,
+                                  color: Colors.yellow,
+                                  fontWeight: FontWeight.w500,
+                                ),
+                              ),
+                            ),
                           ],
                         ),
                       ),
