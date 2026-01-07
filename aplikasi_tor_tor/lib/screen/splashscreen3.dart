@@ -28,7 +28,7 @@ class SplashScreen extends StatelessWidget {
 
               const SizedBox(height: 30), // Spasi antara judul dan gambar
 
-              // 
+              // Tambah gambar logo aplikasi
               const CircleAvatar(
                 radius: 90,
                 // 
