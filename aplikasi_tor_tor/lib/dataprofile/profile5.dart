@@ -74,6 +74,16 @@ class Profile5 extends StatelessWidget {
               title: 'ID Karyawan',
               value: 'EMP-001',
             ),
+            _infoCard(
+              icon: Icons.school,
+              title: 'Pendidikan',
+              value: 'S1 – Global Institute',
+            ),
+            _infoCard(
+              icon: Icons.badge, 
+              title: 'NIM', 
+              value: '1125170031'
+            ),
 
             const SizedBox(height: 30),
 
