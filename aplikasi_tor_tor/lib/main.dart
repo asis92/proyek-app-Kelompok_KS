@@ -1,5 +1,6 @@
-import 'package:aplikasi_tor_tor/screen/splashscreen1.dart';
+import 'package:aplikasi_tor_tor/dataprofile/profile2.dart';
 import 'package:flutter/material.dart';
+
 
 void main() {
   runApp(const MyApp());
@@ -18,7 +19,7 @@ class MyApp extends StatelessWidget {
       ),
       debugShowCheckedModeBanner: false,
 
-      home: Splashscreen1(), //memanggil nama class splash screen 1
+      home: DataProfile2(), //memanggil nama class splash screen 1
 
     );
   }
