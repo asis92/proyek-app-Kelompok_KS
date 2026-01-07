@@ -1,14 +1,14 @@
 import 'package:flutter/material.dart'; // Import Flutter Material Package
-import 'package:aplikasi_tor_tor/screen/splashscreen4.dart'; // Import halaman profil
+import 'package:aplikasi_tor_tor/screen/splashscreen4.dart'; // Import Splashscreen4
 
 class SplashScreen extends StatelessWidget {
-  // Kelas SplashScreen
+  // class SplashScreen
   const SplashScreen({super.key});
 
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      // Mengatur warna latar belakang aplikasi menjadi abu-abu terang
+      // Mengatur warna latar belakang halaman splash screen
       backgroundColor: const Color(0xFFF7F8FC),
       body: SafeArea(
         child: Padding(
@@ -17,18 +17,18 @@ class SplashScreen extends StatelessWidget {
             children: [
               const SizedBox(height: 20),
 
-              // Widget Teks untuk Judul Utama Aplikasi
+              // Tambah Align untuk menempatkan teks di tengah
               const Align(
                 alignment: Alignment.center,
                 child: Text(
-                  'Aplikasi Booking Hotel',
+                  'Aplikasi Booking Hotel', // Tambah judul aplikasi
                   style: TextStyle(fontSize: 22, fontWeight: FontWeight.bold),
                 ),
               ),
 
-              const SizedBox(height: 30),
+              const SizedBox(height: 30), // Spasi antara judul dan gambar
 
-              // Widget Lingkaran untuk menampilkan Gambar Logo/Profil
+              // Tambah gambar logo aplikasi
               const CircleAvatar(
                 radius: 90,
                 // Memanggil file gambar dari folder assets yang didaftarkan di pubspec.yaml
@@ -37,9 +37,9 @@ class SplashScreen extends StatelessWidget {
 
               const SizedBox(height: 20),
 
-              // Widget Teks untuk menampilkan Nama Pembuat Aplikasi
+              // Tambah teks deskripsi aplikasi
               const Text(
-                'Oleh \nYehezkiel Arisandi Bulan',
+                'Oleh \nYehezkiel Arisandi Bulan', // Tambah nama pembuat aplikasi
                 textAlign: TextAlign.center,
                 style: TextStyle(
                   fontSize: 18,
@@ -50,7 +50,7 @@ class SplashScreen extends StatelessWidget {
 
               const SizedBox(height: 10),
 
-              // Widget Teks untuk menampilkan Keterangan Tambahan
+              // Tambah teks deskripsi aplikasi
               const Text(
                 'UAS Aplikasi Mobile',
                 style: TextStyle(fontSize: 16, color: Colors.black),
@@ -58,7 +58,7 @@ class SplashScreen extends StatelessWidget {
 
               const SizedBox(height: 20),
 
-              // Indikator Dot untuk mempercantik UI Splash Screen
+              // Tambah indikator halaman
               Row(
                 mainAxisAlignment: MainAxisAlignment.center,
                 children: List.generate(4, (index) {
@@ -66,12 +66,12 @@ class SplashScreen extends StatelessWidget {
                     margin: const EdgeInsets.symmetric(horizontal: 4),
                     width: index == 1
                         ? 12
-                        : 8, // Lebar titik indeks ke-1 lebih besar
+                        : 8, // Indikator halaman aktif
                     height: 8,
                     decoration: BoxDecoration(
                       color: index == 1
                           ? Colors
-                                .green // Titik indeks ke-1 diberi warna hijau
+                                .green // Indikator halaman aktif berwarna hijau
                           : Colors.grey.shade400,
                       borderRadius: BorderRadius.circular(10),
                     ),
@@ -79,10 +79,10 @@ class SplashScreen extends StatelessWidget {
                 }),
               ),
 
-              // Spacer digunakan untuk mendorong tombol Lanjut ke bagian paling bawah
-              const Spacer(),
+              
+              const Spacer(), // Memberi jarak fleksibel antara indikator dan tombol
 
-              // Tombol Navigasi untuk berpindah ke Halaman Profil
+              // Tambah tombol "Lanjut"
               SizedBox(
                 width: double.infinity,
                 height: 50,
@@ -94,14 +94,14 @@ class SplashScreen extends StatelessWidget {
                     ),
                   ),
                   onPressed: () {
-                    // Navigasi ke halaman TeamProfilePage saat tombol ditekan
+                    // Tambah Navigasi ke SplashScreen4 saat tombol ditekan
                     Navigator.push(
                       context,
                       MaterialPageRoute(builder: (context) => SplashScreen4()),
                     );
                   },
                   child: const Text(
-                    'Lanjut',
+                    'Lanjut', // Teks pada tombol
                     style: TextStyle(
                       fontSize: 18,
                       fontWeight: FontWeight.bold,

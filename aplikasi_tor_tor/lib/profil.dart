@@ -13,7 +13,7 @@ class TeamProfilePage extends StatelessWidget {
       "prodi": "Sistem Informasi",
       "role": "UAS Aplikasi Mobile",
       // 3. Menentukan path gambar profil anggota tim
-      "image": "assets/images/image2.jpeg", 
+      "image": "assets/images/image2.jpeg",
     },
   ];
 
@@ -21,7 +21,7 @@ class TeamProfilePage extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       // 4. Mengatur warna latar belakang halaman profil
-      backgroundColor: const Color(0xFFF7F8FC), 
+      backgroundColor: const Color(0xFFF7F8FC),
       appBar: AppBar(
         // 5. Menambahkan judul pada AppBar
         title: const Text("Profil Saya"),
@@ -30,7 +30,7 @@ class TeamProfilePage extends StatelessWidget {
         foregroundColor: Colors.white,
       ),
       // 7. tambah SingleChildScrollView untuk mencegah error overflow jika konten melebihi tinggi layar
-      body: SingleChildScrollView( 
+      body: SingleChildScrollView(
         child: Padding(
           padding: const EdgeInsets.all(16),
           child: Column(
@@ -38,11 +38,11 @@ class TeamProfilePage extends StatelessWidget {
               // 8. tambah GridView.builder untuk menampilkan profil anggota tim dalam bentuk grid
               GridView.builder(
                 // 9. Mengatur ukuran GridView agar sesuai dengan konten
-                shrinkWrap: true, 
+                shrinkWrap: true,
                 // 10. Menonaktifkan scroll pada GridView agar tidak bertabrakan dengan SingleChildScrollView
                 physics: const NeverScrollableScrollPhysics(),
                 gridDelegate: const SliverGridDelegateWithFixedCrossAxisCount(
-                  crossAxisCount: 1, 
+                  crossAxisCount: 1,
                   // 11. Mengatur jarak antar kolom dan baris dalam grid
                   mainAxisExtent: 400,
                 ),
@@ -69,7 +69,10 @@ class TeamProfilePage extends StatelessWidget {
                         Text(
                           member['name']!,
                           textAlign: TextAlign.center,
-                          style: const TextStyle(fontWeight: FontWeight.bold, fontSize: 18),
+                          style: const TextStyle(
+                            fontWeight: FontWeight.bold,
+                            fontSize: 18,
+                          ),
                         ),
                         // 15. Menambahkan garis pemisah antar elemen informasi
                         const Divider(indent: 40, endIndent: 40, thickness: 1),
@@ -81,7 +84,10 @@ class TeamProfilePage extends StatelessWidget {
                         const SizedBox(height: 12),
                         // 18. Menampilkan peran anggota tim dalam sebuah container dengan latar belakang hijau muda
                         Container(
-                          padding: const EdgeInsets.symmetric(horizontal: 12, vertical: 4),
+                          padding: const EdgeInsets.symmetric(
+                            horizontal: 12,
+                            vertical: 4,
+                          ),
                           decoration: BoxDecoration(
                             // 19. Memberi warna latar belakang hijau muda pada container
                             color: Colors.green.withValues(alpha: 0.1),
@@ -101,7 +107,7 @@ class TeamProfilePage extends StatelessWidget {
                 },
               ),
               const SizedBox(height: 20),
-              
+
               // 20. Tombol untuk kembali ke halaman Splash Screen
               SizedBox(
                 width: double.infinity,
@@ -110,12 +116,15 @@ class TeamProfilePage extends StatelessWidget {
                   onPressed: () {
                     Navigator.pop(context);
                   },
-                  icon: const Icon(Icons.arrow_back), // 21. Menambahkan ikon panah kembali pada tombol
+                  icon: const Icon(
+                    Icons.arrow_back,
+                  ), // 21. Menambahkan ikon panah kembali pada tombol
                   label: const Text(
                     "Kembali ke Splash Screen",
                     style: TextStyle(fontSize: 16, fontWeight: FontWeight.bold),
                   ),
-                  style: ElevatedButton.styleFrom( // 22. Mengatur gaya tombol
+                  style: ElevatedButton.styleFrom(
+                    // 22. Mengatur gaya tombol
                     backgroundColor: const Color(0xFF1A237E),
                     foregroundColor: Colors.white,
                     shape: RoundedRectangleBorder(
