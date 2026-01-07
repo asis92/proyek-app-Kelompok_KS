@@ -35,8 +35,8 @@ class TeamProfilePage extends StatelessWidget {
           padding: const EdgeInsets.all(16),
           child: Column(
             children: [
-//               // 8. GridView.builder digunakan untuk mengelola tata letak kartu secara dinamis
-//               GridView.builder(
+              // 8. tambah GridView.builder untuk menampilkan profil anggota tim dalam bentuk grid
+              GridView.builder(
 //                 // 9. Menyesuaikan tinggi GridView sesuai dengan konten yang ada
 //                 shrinkWrap: true, 
 //                 // 10. Menghilangkan efek scroll pada GridView karena sudah dibungkus oleh SingleChildScrollView
