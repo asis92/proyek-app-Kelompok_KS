@@ -11,9 +11,23 @@ class Card1 extends StatelessWidget {
         actions: const [],
       ),
       body: SingleChildScrollView(
-        child: Container(
-          padding: const EdgeInsets.all(20.0),
-          child: const Column(children: []),
+        child: Column(
+          children: [
+            Card(
+              elevation: 8,
+              shadowColor: Colors.blueAccent,
+              clipBehavior: Clip.antiAlias,
+              child: Container(
+                decoration: BoxDecoration(
+                  gradient: LinearGradient(
+                    begin: Alignment.topRight,
+                    end: Alignment.bottomLeft,
+                    colors: [Colors.yellow, Colors.green],
+                  ),
+                ),
+              ),
+            ),
+          ],
         ),
       ),
     );
