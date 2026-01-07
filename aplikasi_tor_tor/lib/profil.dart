@@ -65,12 +65,12 @@ class TeamProfilePage extends StatelessWidget {
                           backgroundImage: AssetImage(member['image']!),
                         ),
                         const SizedBox(height: 15),
-//                         // 14. Menampilkan nama anggota tim dengan gaya teks yang menonjol
-//                         Text(
-//                           member['name']!,
-//                           textAlign: TextAlign.center,
-//                           style: const TextStyle(fontWeight: FontWeight.bold, fontSize: 18),
-//                         ),
+                        // 14. menampilkan teks tebal untuk nama anggota tim
+                        Text(
+                          member['name']!,
+                          textAlign: TextAlign.center,
+                          style: const TextStyle(fontWeight: FontWeight.bold, fontSize: 18),
+                        ),
 //                         // 15. Menambahkan garis pemisah antar elemen informasi
 //                         const Divider(indent: 40, endIndent: 40, thickness: 1),
 //                         // 16. Menampilkan NIM anggota tim
