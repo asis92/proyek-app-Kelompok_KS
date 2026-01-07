@@ -20,26 +20,26 @@ class TeamProfilePage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      // 4. Menentukan warna latar belakang halaman (light grey) untuk kenyamanan visual
+      // 4. Mengatur warna latar belakang halaman profil
       backgroundColor: const Color(0xFFF7F8FC), 
       appBar: AppBar(
         // 5. Menambahkan judul pada AppBar
         title: const Text("Profil Saya"),
-        // 6. Mengatur warna latar belakang dan foreground AppBar
+        // 6. Mengatur warna latar belakang dan teks AppBar
         backgroundColor: const Color(0xFF1A237E),
         foregroundColor: Colors.white,
       ),
-      // 7. Widget SingleChildScrollView mencegah error overflow jika konten melebihi tinggi layar
+      // 7. tambah SingleChildScrollView untuk mencegah error overflow jika konten melebihi tinggi layar
       body: SingleChildScrollView( 
         child: Padding(
           padding: const EdgeInsets.all(16),
           child: Column(
             children: [
-              // 8. GridView.builder digunakan untuk mengelola tata letak kartu secara dinamis
+              // 8. tambah GridView.builder untuk menampilkan profil anggota tim dalam bentuk grid
               GridView.builder(
-                // 9. Menyesuaikan tinggi GridView sesuai dengan konten yang ada
+                // 9. Mengatur ukuran GridView agar sesuai dengan konten
                 shrinkWrap: true, 
-                // 10. Menghilangkan efek scroll pada GridView karena sudah dibungkus oleh SingleChildScrollView
+                // 10. Menonaktifkan scroll pada GridView agar tidak bertabrakan dengan SingleChildScrollView
                 physics: const NeverScrollableScrollPhysics(),
                 gridDelegate: const SliverGridDelegateWithFixedCrossAxisCount(
                   crossAxisCount: 1, 
@@ -49,7 +49,7 @@ class TeamProfilePage extends StatelessWidget {
                 itemCount: teamMembers.length,
                 itemBuilder: (context, index) {
                   final member = teamMembers[index];
-                  // 12. Membuat kartu profil untuk setiap anggota tim
+                  // 12. Menggunakan Card untuk menampilkan informasi profil anggota tim
                   return Card(
                     elevation: 4,
                     shape: RoundedRectangleBorder(
@@ -58,14 +58,14 @@ class TeamProfilePage extends StatelessWidget {
                     child: Column(
                       mainAxisAlignment: MainAxisAlignment.center,
                       children: [
-                        // 13. Widget CircleAvatar untuk menampilkan gambar profil anggota tim
+                        // 13. Menampilkan gambar profil anggota tim dalam bentuk lingkaran
                         CircleAvatar(
                           radius: 70,
                           backgroundColor: Colors.grey[200],
                           backgroundImage: AssetImage(member['image']!),
                         ),
                         const SizedBox(height: 15),
-                        // 14. Menampilkan nama anggota tim dengan gaya teks yang menonjol
+                        // 14. menampilkan teks tebal untuk nama anggota tim
                         Text(
                           member['name']!,
                           textAlign: TextAlign.center,
@@ -79,7 +79,7 @@ class TeamProfilePage extends StatelessWidget {
                         // 17. Menampilkan jurusan dan program studi anggota tim
                         Text("${member['jurusan']} - ${member['prodi']}"),
                         const SizedBox(height: 12),
-                        // 18. Menampilkan peran atau keterangan tambahan anggota tim dalam sebuah container dengan latar belakang berwarna
+                        // 18. Menampilkan peran anggota tim dalam sebuah container dengan latar belakang hijau muda
                         Container(
                           padding: const EdgeInsets.symmetric(horizontal: 12, vertical: 4),
                           decoration: BoxDecoration(
@@ -110,12 +110,12 @@ class TeamProfilePage extends StatelessWidget {
                   onPressed: () {
                     Navigator.pop(context);
                   },
-                  icon: const Icon(Icons.arrow_back),
+                  icon: const Icon(Icons.arrow_back), // 21. Menambahkan ikon panah kembali pada tombol
                   label: const Text(
                     "Kembali ke Splash Screen",
                     style: TextStyle(fontSize: 16, fontWeight: FontWeight.bold),
                   ),
-                  style: ElevatedButton.styleFrom(
+                  style: ElevatedButton.styleFrom( // 22. Mengatur gaya tombol
                     backgroundColor: const Color(0xFF1A237E),
                     foregroundColor: Colors.white,
                     shape: RoundedRectangleBorder(
