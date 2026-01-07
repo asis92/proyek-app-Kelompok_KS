@@ -39,10 +39,10 @@ class TeamProfilePage extends StatelessWidget {
               GridView.builder(
                 // 9. Mengatur ukuran GridView agar sesuai dengan konten
                 shrinkWrap: true, 
-//                 // 10. Menghilangkan efek scroll pada GridView karena sudah dibungkus oleh SingleChildScrollView
-//                 physics: const NeverScrollableScrollPhysics(),
-//                 gridDelegate: const SliverGridDelegateWithFixedCrossAxisCount(
-//                   crossAxisCount: 1, 
+                // 10. Menonaktifkan scroll pada GridView agar tidak bertabrakan dengan SingleChildScrollView
+                physics: const NeverScrollableScrollPhysics(),
+                gridDelegate: const SliverGridDelegateWithFixedCrossAxisCount(
+                  crossAxisCount: 1, 
 //                   // 11. Mengatur jarak antar kolom dan baris dalam grid
 //                   mainAxisExtent: 400,
 //                 ),
