@@ -71,6 +71,30 @@ class Card1 extends StatelessWidget {
                           ),
                         ),
                       ),
+                      SizedBox(height: 10),
+                      Row(
+                        children: [
+                          Text("text 1", style: TextStyle(fontSize: 10.0)),
+                          SizedBox(
+                            height: 40,
+                            child: VerticalDivider(
+                              thickness: 1,
+                              color: Colors.black,
+                              width: 2,
+                            ),
+                          ),
+                          Text("text 1", style: TextStyle(fontSize: 10.0)),
+                          SizedBox(
+                            height: 40,
+                            child: VerticalDivider(
+                              thickness: 1,
+                              color: Colors.black,
+                              width: 2,
+                            ),
+                          ),
+                          Text("text 1", style: TextStyle(fontSize: 10.0)),
+                        ],
+                      ),
                     ],
                   ),
                 ),
