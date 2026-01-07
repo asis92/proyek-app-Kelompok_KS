@@ -37,8 +37,8 @@ class TeamProfilePage extends StatelessWidget {
             children: [
               // 8. tambah GridView.builder untuk menampilkan profil anggota tim dalam bentuk grid
               GridView.builder(
-//                 // 9. Menyesuaikan tinggi GridView sesuai dengan konten yang ada
-//                 shrinkWrap: true, 
+                // 9. Mengatur ukuran GridView agar sesuai dengan konten
+                shrinkWrap: true, 
 //                 // 10. Menghilangkan efek scroll pada GridView karena sudah dibungkus oleh SingleChildScrollView
 //                 physics: const NeverScrollableScrollPhysics(),
 //                 gridDelegate: const SliverGridDelegateWithFixedCrossAxisCount(
