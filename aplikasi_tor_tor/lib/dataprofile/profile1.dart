@@ -25,6 +25,7 @@ class Card1 extends StatelessWidget {
                     colors: [Colors.yellow, Colors.green],
                   ),
                 ),
+                child: Text("text", style: TextStyle(fontSize: 20.0)),
               ),
             ),
           ],
