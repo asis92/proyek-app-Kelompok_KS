@@ -43,12 +43,12 @@ class TeamProfilePage extends StatelessWidget {
                 physics: const NeverScrollableScrollPhysics(),
                 gridDelegate: const SliverGridDelegateWithFixedCrossAxisCount(
                   crossAxisCount: 1, 
-//                   // 11. Mengatur jarak antar kolom dan baris dalam grid
-//                   mainAxisExtent: 400,
-//                 ),
-//                 itemCount: teamMembers.length,
-//                 itemBuilder: (context, index) {
-//                   final member = teamMembers[index];
+                  // 11. Mengatur jarak antar kolom dan baris dalam grid
+                  mainAxisExtent: 400,
+                ),
+                itemCount: teamMembers.length,
+                itemBuilder: (context, index) {
+                  final member = teamMembers[index];
 //                   // 12. Membuat kartu profil untuk setiap anggota tim
 //                   return Card(
 //                     elevation: 4,
