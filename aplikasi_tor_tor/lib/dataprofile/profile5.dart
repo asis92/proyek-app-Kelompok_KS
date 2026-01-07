@@ -109,6 +109,11 @@ class Profile5 extends StatelessWidget {
               title: 'Tanggal Masuk',
               value: '10 Januari 2001',
             ),
+              _infoCard(
+              icon: Icons.email,
+              title: 'Email',
+              value: 'jejenjaenudin192@email.com',
+            ),
 
             const SizedBox(height: 30),
 
