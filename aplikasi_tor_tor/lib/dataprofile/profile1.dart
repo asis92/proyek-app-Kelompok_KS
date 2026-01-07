@@ -56,6 +56,21 @@ class Card1 extends StatelessWidget {
                           color: Colors.white,
                         ),
                       ),
+                      SizedBox(height: 10),
+                      Container(
+                        decoration: BoxDecoration(
+                          color: Colors.greenAccent,
+                          borderRadius: BorderRadius.circular(20),
+                        ),
+                        child: Text(
+                          "Hobi : Mancing",
+                          style: TextStyle(
+                            fontSize: 17.0,
+                            color: Colors.white,
+                            fontWeight: FontWeight.w500,
+                          ),
+                        ),
+                      ),
                     ],
                   ),
                 ),
