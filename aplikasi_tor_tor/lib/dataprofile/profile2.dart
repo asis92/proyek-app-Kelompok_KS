@@ -72,31 +72,70 @@ class DataProfile2 extends StatelessWidget {
                             Row(
                               mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                               children: [
-                                Text("Column 1",
-                                  style: TextStyle(
-                                    fontSize: 11.0,
-                                    fontWeight: FontWeight.bold
-                                  ),
+                                Column(
+                                  children: [
+                                    Text("100",
+                                      style: TextStyle(
+                                        fontSize: 22.0,
+                                        fontWeight: FontWeight.bold,
+                                        color: Colors.black
+                                      ),
+                                    ),
+                                    SizedBox(height: 5),
+                                    Text("Follower",
+                                      style: TextStyle(
+                                        fontSize: 14.0,
+                                        fontWeight: FontWeight.bold,
+                                        color: Colors.white.withValues(alpha: 0.5),
+                                      ),
+                                    ),
+                                  ],
                                 ),
                                 SizedBox(height: 40,
                                 child: VerticalDivider(thickness: 1,
                                 color: Colors.yellow,width: 1),
                                 ),
-                                Text("Column 1",
-                                  style: TextStyle(
-                                    fontSize: 11.0,
-                                    fontWeight: FontWeight.bold
-                                  ),
+                                Column(
+                                  children: [
+                                    Text("100",
+                                      style: TextStyle(
+                                        fontSize: 22.0,
+                                        fontWeight: FontWeight.bold,
+                                        color: Colors.black
+                                      ),
+                                    ),
+                                    SizedBox(height: 5),
+                                    Text("Follower",
+                                      style: TextStyle(
+                                        fontSize: 14.0,
+                                        fontWeight: FontWeight.bold,
+                                        color: Colors.white.withValues(alpha: 0.5),
+                                      ),
+                                    ),
+                                  ],
                                 ),
                                 SizedBox(height: 40,
                                 child: VerticalDivider(thickness: 1,
                                 color: Colors.yellow,width: 1),
                                 ),
-                                Text("Column 1",
-                                  style: TextStyle(
-                                    fontSize: 11.0,
-                                    fontWeight: FontWeight.bold
-                                  ),
+                                Column(
+                                  children: [
+                                    Text("100",
+                                      style: TextStyle(
+                                        fontSize: 22.0,
+                                        fontWeight: FontWeight.bold,
+                                        color: Colors.black
+                                      ),
+                                    ),
+                                    SizedBox(height: 5),
+                                    Text("Follower",
+                                      style: TextStyle(
+                                        fontSize: 14.0,
+                                        fontWeight: FontWeight.bold,
+                                        color: Colors.white.withValues(alpha: 0.5),
+                                      ),
+                                    ),
+                                  ],
                                 ),
                               ],
                             ),
