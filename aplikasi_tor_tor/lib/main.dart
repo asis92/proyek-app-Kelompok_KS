@@ -1,4 +1,4 @@
-import 'package:aplikasi_tor_tor/dataprofile/profile5.dart';
+import 'package:aplikasi_tor_tor/dataprofile/profile1.dart';
 import 'package:flutter/material.dart';
 
 void main() {
@@ -17,7 +17,7 @@ class MyApp extends StatelessWidget {
         colorScheme: ColorScheme.fromSeed(seedColor: Colors.red),
       ),
       debugShowCheckedModeBanner: false,
-      home: Profile(), //memanggil nama class splash screen 1
+      home: Card1(), //memanggil nama class splash screen 1
     );
   }
 }
