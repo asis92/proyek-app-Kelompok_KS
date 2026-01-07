@@ -79,7 +79,24 @@ class DataProfile2 extends StatelessWidget {
                                 ),
                                 SizedBox(height: 40,
                                 child: VerticalDivider(thickness: 1,
-                                color: Colors.yellow,width: 1),),
+                                color: Colors.yellow,width: 1),
+                                ),
+                                Text("Column 1",
+                                  style: TextStyle(
+                                    fontSize: 11.0,
+                                    fontWeight: FontWeight.bold
+                                  ),
+                                ),
+                                SizedBox(height: 40,
+                                child: VerticalDivider(thickness: 1,
+                                color: Colors.yellow,width: 1),
+                                ),
+                                Text("Column 1",
+                                  style: TextStyle(
+                                    fontSize: 11.0,
+                                    fontWeight: FontWeight.bold
+                                  ),
+                                ),
                               ],
                             ),
                           ],
