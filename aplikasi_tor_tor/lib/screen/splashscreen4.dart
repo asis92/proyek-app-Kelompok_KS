@@ -112,7 +112,9 @@ class SplashScreen4 extends StatelessWidget {
       width: active ? 18 : 8,
       height: 8,
       decoration: BoxDecoration(
-        color: active ? Colors.redAccent : Colors.redAccent.withOpacity(0.3),
+        color: active
+            ? Colors.redAccent
+            : Colors.redAccent.withValues(alpha: 0.2),
         borderRadius: BorderRadius.circular(4),
       ),
     );
