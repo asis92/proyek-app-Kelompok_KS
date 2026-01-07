@@ -73,9 +73,9 @@ class TeamProfilePage extends StatelessWidget {
                         ),
                         // 15. Menambahkan garis pemisah antar elemen informasi
                         const Divider(indent: 40, endIndent: 40, thickness: 1),
-//                         // 16. Menampilkan NIM anggota tim
-//                         Text("NIM: ${member['nim']}"),
-//                         const SizedBox(height: 4),
+                        // 16. Menampilkan NIM anggota tim
+                        Text("NIM: ${member['nim']}"),
+                        const SizedBox(height: 4),
 //                         // 17. Menampilkan jurusan dan program studi anggota tim
 //                         Text("${member['jurusan']} - ${member['prodi']}"),
 //                         const SizedBox(height: 12),
