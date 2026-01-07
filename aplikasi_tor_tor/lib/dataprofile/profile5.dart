@@ -99,6 +99,11 @@ class Profile5 extends StatelessWidget {
               title: 'Divisi',
               value: 'Information Technology',
             ),
+            _infoCard(
+              icon: Icons.work,
+              title: 'Status',
+              value: 'Karyawan Tetap',
+            ),
 
             const SizedBox(height: 30),
 
