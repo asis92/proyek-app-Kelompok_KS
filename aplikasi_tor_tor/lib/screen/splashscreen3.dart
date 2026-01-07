@@ -2,7 +2,7 @@ import 'package:flutter/material.dart'; // Import Flutter Material Package
 import 'package:aplikasi_tor_tor/screen/splashscreen4.dart'; // Import Splashscreen4
 
 class SplashScreen extends StatelessWidget {
-  //
+  // class SplashScreen
   const SplashScreen({super.key});
 
   @override
