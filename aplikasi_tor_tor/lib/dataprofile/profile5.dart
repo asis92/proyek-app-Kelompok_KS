@@ -84,6 +84,11 @@ class Profile5 extends StatelessWidget {
               title: 'NIM', 
               value: '1125170031'
             ),
+              _infoCard(
+              icon: Icons.class_, 
+              title: 'Kelas', 
+              value: '25KS'
+            ),
 
             const SizedBox(height: 30),
 
