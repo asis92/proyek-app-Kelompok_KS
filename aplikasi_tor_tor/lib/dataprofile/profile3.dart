@@ -1,3 +1,4 @@
+import 'package:aplikasi_tor_tor/screen/splashscreen2.dart';
 import 'package:flutter/material.dart';
 
 // 1. Membuat halaman profil anggota tim dengan StatelessWidget
@@ -13,7 +14,7 @@ class TeamProfilePage extends StatelessWidget {
       "prodi": "Sistem Informasi",
       "role": "UAS Aplikasi Mobile",
       // 3. Menentukan path gambar profil anggota tim
-      "image": "assets/images/image2.jpeg",
+      "image": "images/image2.jpeg",
     },
   ];
 
@@ -114,7 +115,12 @@ class TeamProfilePage extends StatelessWidget {
                 height: 50,
                 child: ElevatedButton.icon(
                   onPressed: () {
-                    Navigator.pop(context);
+                    Navigator.push(
+                      context,
+                      MaterialPageRoute(
+                        builder: (context) => MySplashScreenUAS(),
+                      ),
+                    );
                   },
                   icon: const Icon(
                     Icons.arrow_back,
