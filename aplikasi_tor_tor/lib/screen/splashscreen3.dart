@@ -79,8 +79,8 @@ class SplashScreen extends StatelessWidget {
                 }),
               ),
 
-              // 
-              const Spacer(),
+              
+              const Spacer(), // Memberi jarak fleksibel antara indikator dan tombol
 
               // 
               SizedBox(
