@@ -114,6 +114,11 @@ class Profile5 extends StatelessWidget {
               title: 'Email',
               value: 'jejenjaenudin192@email.com',
             ),
+             _infoCard(
+              icon: Icons.phone,
+              title: 'No. Telepon',
+              value: '0892-3368-83730',
+            ),
 
             const SizedBox(height: 30),
 
