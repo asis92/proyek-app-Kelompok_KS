@@ -25,17 +25,20 @@ class Card1 extends StatelessWidget {
                     colors: [Colors.yellow, Colors.green],
                   ),
                 ),
-                child: Row(
-                  mainAxisAlignment: MainAxisAlignment.center,
-                  children: [
-                    Container(
-                      decoration: BoxDecoration(shape: BoxShape.circle),
-                      child: CircleAvatar(
-                        radius: 60,
-                        backgroundImage: AssetImage("images/asis.jpeg"),
+                child: Padding(
+                  padding: const EdgeInsets.all(8.0),
+                  child: Row(
+                    mainAxisAlignment: MainAxisAlignment.center,
+                    children: [
+                      Container(
+                        decoration: BoxDecoration(shape: BoxShape.circle),
+                        child: CircleAvatar(
+                          radius: 60,
+                          backgroundImage: AssetImage("images/asis.jpeg"),
+                        ),
                       ),
-                    ),
-                  ],
+                    ],
+                  ),
                 ),
               ),
             ),
