@@ -94,7 +94,7 @@ class SplashScreen extends StatelessWidget {
                     ),
                   ),
                   onPressed: () {
-                    //
+                    // Navigasi ke SplashScreen4 saat tombol ditekan
                     Navigator.push(
                       context,
                       MaterialPageRoute(builder: (context) => SplashScreen4()),
