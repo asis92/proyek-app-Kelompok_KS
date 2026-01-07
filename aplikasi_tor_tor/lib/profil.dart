@@ -29,12 +29,12 @@ class TeamProfilePage extends StatelessWidget {
         backgroundColor: const Color(0xFF1A237E),
         foregroundColor: Colors.white,
       ),
-//       // 7. Widget SingleChildScrollView mencegah error overflow jika konten melebihi tinggi layar
-//       body: SingleChildScrollView( 
-//         child: Padding(
-//           padding: const EdgeInsets.all(16),
-//           child: Column(
-//             children: [
+      // 7. tambah SingleChildScrollView untuk mencegah error overflow jika konten melebihi tinggi layar
+      body: SingleChildScrollView( 
+        child: Padding(
+          padding: const EdgeInsets.all(16),
+          child: Column(
+            children: [
 //               // 8. GridView.builder digunakan untuk mengelola tata letak kartu secara dinamis
 //               GridView.builder(
 //                 // 9. Menyesuaikan tinggi GridView sesuai dengan konten yang ada
