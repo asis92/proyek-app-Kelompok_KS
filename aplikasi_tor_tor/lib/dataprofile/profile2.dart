@@ -27,16 +27,22 @@ class DataProfile2 extends StatelessWidget {
                       ),
                       child: Row(
                         children: [
-                          
+                          Container(
+                            decoration: BoxDecoration(
+                              shape: BoxShape.circle
+                              ),
+                              child: CircleAvatar(
+                                radius: 60,
+                                backgroundImage: AssetImage("images/grafica01.png"),
+                              ),
+                          ),
                         ],
-                      )
-                        ),
                       ),
                     ),
                   ),
                 ],
               ),
-            ),
-          );
+       ),
+    );
   }
 }
