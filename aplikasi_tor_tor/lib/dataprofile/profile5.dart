@@ -1,4 +1,6 @@
+import 'package:aplikasi_tor_tor/screen/splashscreen1.dart';
 import 'package:flutter/material.dart';
+
 class Profile extends StatelessWidget {
   const Profile({super.key});
 
@@ -17,7 +19,6 @@ class Profile extends StatelessWidget {
       body: SingleChildScrollView(
         child: Column(
           children: [
-           
             Container(
               width: double.infinity,
               padding: const EdgeInsets.symmetric(vertical: 30),
@@ -53,7 +54,7 @@ class Profile extends StatelessWidget {
             ),
             const SizedBox(height: 25),
 
-            // INFO KARYAWAN 
+            // INFO KARYAWAN
             _infoCard(
               icon: Icons.badge,
               title: 'ID Karyawan',
@@ -70,7 +71,7 @@ class Profile extends StatelessWidget {
               value: 'Karyawan Tetap',
             ),
             _infoCard(
-              icon: Icons.school, 
+              icon: Icons.school,
               title: 'Pendidikan',
               value: 'S1 – Global Institute',
             ),
@@ -94,13 +95,17 @@ class Profile extends StatelessWidget {
 
             const SizedBox(height: 30),
 
-              Padding(
+            Padding(
               padding: const EdgeInsets.symmetric(horizontal: 40),
               child: SizedBox(
                 width: double.infinity,
                 height: 45,
                 child: ElevatedButton(
                   onPressed: () {
+                    Navigator.pushReplacement(
+                      context,
+                      MaterialPageRoute(builder: (context) => Splashscreen1()),
+                    );
                     // kembali ke dashboard
                   },
                   style: ElevatedButton.styleFrom(
@@ -128,7 +133,6 @@ class Profile extends StatelessWidget {
     );
   }
 
-  
   static Widget _infoCard({
     required IconData icon,
     required String title,
