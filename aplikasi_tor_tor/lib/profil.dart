@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 
-// 1. Membuat kelas TeamProfilePage yang merupakan halaman profil anggota tim
+// 1. Membuat halaman profil anggota tim dengan StatelessWidget
 class TeamProfilePage extends StatelessWidget {
   const TeamProfilePage({super.key});
 
