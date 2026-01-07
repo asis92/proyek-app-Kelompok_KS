@@ -76,9 +76,9 @@ class TeamProfilePage extends StatelessWidget {
                         // 16. Menampilkan NIM anggota tim
                         Text("NIM: ${member['nim']}"),
                         const SizedBox(height: 4),
-//                         // 17. Menampilkan jurusan dan program studi anggota tim
-//                         Text("${member['jurusan']} - ${member['prodi']}"),
-//                         const SizedBox(height: 12),
+                        // 17. Menampilkan jurusan dan program studi anggota tim
+                        Text("${member['jurusan']} - ${member['prodi']}"),
+                        const SizedBox(height: 12),
 //                         // 18. Menampilkan peran atau keterangan tambahan anggota tim dalam sebuah container dengan latar belakang berwarna
 //                         Container(
 //                           padding: const EdgeInsets.symmetric(horizontal: 12, vertical: 4),
