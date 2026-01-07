@@ -50,7 +50,7 @@ class SplashScreen extends StatelessWidget {
 
               const SizedBox(height: 10),
 
-              // 
+              // Tambah teks deskripsi aplikasi
               const Text(
                 'UAS Aplikasi Mobile',
                 style: TextStyle(fontSize: 16, color: Colors.black),
