@@ -21,7 +21,7 @@ class SplashScreen extends StatelessWidget {
               const Align(
                 alignment: Alignment.center,
                 child: Text(
-                  'Aplikasi Booking Hotel',
+                  'Aplikasi Booking Hotel', // Tambah judul aplikasi
                   style: TextStyle(fontSize: 22, fontWeight: FontWeight.bold),
                 ),
               ),
