@@ -110,24 +110,24 @@ class TeamProfilePage extends StatelessWidget {
                   onPressed: () {
                     Navigator.pop(context);
                   },
-//                   icon: const Icon(Icons.arrow_back),
-//                   label: const Text(
-//                     "Kembali ke Splash Screen",
-//                     style: TextStyle(fontSize: 16, fontWeight: FontWeight.bold),
-//                   ),
-//                   style: ElevatedButton.styleFrom(
-//                     backgroundColor: const Color(0xFF1A237E),
-//                     foregroundColor: Colors.white,
-//                     shape: RoundedRectangleBorder(
-//                       borderRadius: BorderRadius.circular(25),
-//                     ),
-//                   ),
-//                 ),
-//               ),
-//             ],
-//           ),
-//         ),
-//       ),
-//     );
-//   }
-// }
+                  icon: const Icon(Icons.arrow_back), // 21. Menambahkan ikon panah kembali pada tombol
+                  label: const Text(
+                    "Kembali ke Splash Screen",
+                    style: TextStyle(fontSize: 16, fontWeight: FontWeight.bold),
+                  ),
+                  style: ElevatedButton.styleFrom( 
+                    backgroundColor: const Color(0xFF1A237E),
+                    foregroundColor: Colors.white,
+                    shape: RoundedRectangleBorder(
+                      borderRadius: BorderRadius.circular(25),
+                    ),
+                  ),
+                ),
+              ),
+            ],
+          ),
+        ),
+      ),
+    );
+  }
+}
