@@ -39,7 +39,7 @@ class SplashScreen extends StatelessWidget {
 
               // Tambah teks deskripsi aplikasi
               const Text(
-                'Oleh \nYehezkiel Arisandi Bulan', // 
+                'Oleh \nYehezkiel Arisandi Bulan', // Tambah nama pembuat aplikasi
                 textAlign: TextAlign.center,
                 style: TextStyle(
                   fontSize: 18,
