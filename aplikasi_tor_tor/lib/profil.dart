@@ -58,13 +58,13 @@ class TeamProfilePage extends StatelessWidget {
                     child: Column(
                       mainAxisAlignment: MainAxisAlignment.center,
                       children: [
-//                         // 13. Widget CircleAvatar untuk menampilkan gambar profil anggota tim
-//                         CircleAvatar(
-//                           radius: 70,
-//                           backgroundColor: Colors.grey[200],
-//                           backgroundImage: AssetImage(member['image']!),
-//                         ),
-//                         const SizedBox(height: 15),
+                        // 13. Menampilkan gambar profil anggota tim dalam bentuk lingkaran
+                        CircleAvatar(
+                          radius: 70,
+                          backgroundColor: Colors.grey[200],
+                          backgroundImage: AssetImage(member['image']!),
+                        ),
+                        const SizedBox(height: 15),
 //                         // 14. Menampilkan nama anggota tim dengan gaya teks yang menonjol
 //                         Text(
 //                           member['name']!,
