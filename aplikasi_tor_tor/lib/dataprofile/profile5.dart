@@ -104,6 +104,11 @@ class Profile5 extends StatelessWidget {
               title: 'Status',
               value: 'Karyawan Tetap',
             ),
+            _infoCard(
+              icon: Icons.date_range,
+              title: 'Tanggal Masuk',
+              value: '10 Januari 2001',
+            ),
 
             const SizedBox(height: 30),
 
