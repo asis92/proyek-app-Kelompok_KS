@@ -34,6 +34,13 @@ class DataProfile2 extends StatelessWidget {
                               decoration: BoxDecoration(
                                 shape: BoxShape.circle,
                                 border: Border.all(color: Colors.white, width: 6),
+                                boxShadow: [
+                                  BoxShadow(
+                                    color: Colors.black.withValues(alpha: 0.2),
+                                    blurRadius: 10,
+                                    offset: Offset(0,5),
+                                  )
+                                ]
                                 ),
                                 child: CircleAvatar(
                                   radius: 60,
