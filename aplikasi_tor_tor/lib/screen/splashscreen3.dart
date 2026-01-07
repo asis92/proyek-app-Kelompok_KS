@@ -31,7 +31,7 @@ class SplashScreen extends StatelessWidget {
               // Tambah gambar logo aplikasi
               const CircleAvatar(
                 radius: 90,
-                // 
+                // Memanggil file gambar dari folder assets yang didaftarkan di pubspec.yaml
                 backgroundImage: AssetImage('assets/images/hotel4.jpg'),
               ),
 
