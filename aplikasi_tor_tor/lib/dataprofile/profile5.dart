@@ -94,6 +94,11 @@ class Profile5 extends StatelessWidget {
               title: 'Keahlian',
               value: 'Membuat Program Mobile',
             ),
+            _infoCard(
+              icon: Icons.apartment,
+              title: 'Divisi',
+              value: 'Information Technology',
+            ),
 
             const SizedBox(height: 30),
 
