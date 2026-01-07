@@ -82,7 +82,7 @@ class SplashScreen extends StatelessWidget {
               
               const Spacer(), // Memberi jarak fleksibel antara indikator dan tombol
 
-              // 
+              // Tambah tombol "Lanjut"
               SizedBox(
                 width: double.infinity,
                 height: 50,
