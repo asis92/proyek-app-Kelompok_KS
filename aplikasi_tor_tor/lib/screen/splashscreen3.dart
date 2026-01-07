@@ -8,7 +8,7 @@ class SplashScreen extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      // 
+      // Mengatur warna latar belakang halaman splash screen
       backgroundColor: const Color(0xFFF7F8FC),
       body: SafeArea(
         child: Padding(
