@@ -71,7 +71,7 @@ class SplashScreen extends StatelessWidget {
                     decoration: BoxDecoration(
                       color: index == 1
                           ? Colors
-                                .green // 
+                                .green // Indikator halaman aktif berwarna hijau
                           : Colors.grey.shade400,
                       borderRadius: BorderRadius.circular(10),
                     ),
