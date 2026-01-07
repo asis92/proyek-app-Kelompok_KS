@@ -66,7 +66,7 @@ class SplashScreen extends StatelessWidget {
                     margin: const EdgeInsets.symmetric(horizontal: 4),
                     width: index == 1
                         ? 12
-                        : 8, // 
+                        : 8, // Indikator halaman aktif
                     height: 8,
                     decoration: BoxDecoration(
                       color: index == 1
