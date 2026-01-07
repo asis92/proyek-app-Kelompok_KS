@@ -115,7 +115,7 @@ class TeamProfilePage extends StatelessWidget {
                     "Kembali ke Splash Screen",
                     style: TextStyle(fontSize: 16, fontWeight: FontWeight.bold),
                   ),
-                  style: ElevatedButton.styleFrom( 
+                  style: ElevatedButton.styleFrom( // 22. Mengatur gaya tombol
                     backgroundColor: const Color(0xFF1A237E),
                     foregroundColor: Colors.white,
                     shape: RoundedRectangleBorder(
