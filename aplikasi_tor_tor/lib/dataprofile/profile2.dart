@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 
-class DataProfile extends StatelessWidget {
-  const DataProfile({super.key});
+class DataProfile2 extends StatelessWidget {
+  const DataProfile2({super.key});
 
   @override
   Widget build(BuildContext context) {
