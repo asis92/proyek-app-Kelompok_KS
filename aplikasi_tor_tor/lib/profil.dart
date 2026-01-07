@@ -83,24 +83,24 @@ class TeamProfilePage extends StatelessWidget {
                         Container(
                           padding: const EdgeInsets.symmetric(horizontal: 12, vertical: 4),
                           decoration: BoxDecoration(
-//                             // 19. Memberi warna latar belakang hijau muda pada container
-//                             color: Colors.green.withValues(alpha: 0.1),
-//                             borderRadius: BorderRadius.circular(10),
-//                           ),
-//                           child: Text(
-//                             member['role']!,
-//                             style: const TextStyle(
-//                               color: Colors.green,
-//                               fontWeight: FontWeight.w600,
-//                             ),
-//                           ),
-//                         ),
-//                       ],
-//                     ),
-//                   );
-//                 },
-//               ),
-//               const SizedBox(height: 20),
+                            // 19. Memberi warna latar belakang hijau muda pada container
+                            color: Colors.green.withValues(alpha: 0.1),
+                            borderRadius: BorderRadius.circular(10),
+                          ),
+                          child: Text(
+                            member['role']!,
+                            style: const TextStyle(
+                              color: Colors.green,
+                              fontWeight: FontWeight.w600,
+                            ),
+                          ),
+                        ),
+                      ],
+                    ),
+                  );
+                },
+              ),
+              const SizedBox(height: 20),
               
 //               // 20. Tombol untuk kembali ke halaman Splash Screen
 //               SizedBox(
