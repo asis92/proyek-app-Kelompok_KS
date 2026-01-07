@@ -1,14 +1,14 @@
 import 'package:flutter/material.dart'; // Import Flutter Material Package
-import 'package:aplikasi_tor_tor/screen/splashscreen4.dart'; // Import halaman profil
+import 'package:aplikasi_tor_tor/screen/splashscreen4.dart'; // 
 
 class SplashScreen extends StatelessWidget {
-  // Kelas SplashScreen
+  //
   const SplashScreen({super.key});
 
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      // Mengatur warna latar belakang aplikasi menjadi abu-abu terang
+      // 
       backgroundColor: const Color(0xFFF7F8FC),
       body: SafeArea(
         child: Padding(
@@ -17,7 +17,7 @@ class SplashScreen extends StatelessWidget {
             children: [
               const SizedBox(height: 20),
 
-              // Widget Teks untuk Judul Utama Aplikasi
+              // 
               const Align(
                 alignment: Alignment.center,
                 child: Text(
@@ -28,16 +28,16 @@ class SplashScreen extends StatelessWidget {
 
               const SizedBox(height: 30),
 
-              // Widget Lingkaran untuk menampilkan Gambar Logo/Profil
+              // 
               const CircleAvatar(
                 radius: 90,
-                // Memanggil file gambar dari folder assets yang didaftarkan di pubspec.yaml
+                // 
                 backgroundImage: AssetImage('assets/images/hotel4.jpg'),
               ),
 
               const SizedBox(height: 20),
 
-              // Widget Teks untuk menampilkan Nama Pembuat Aplikasi
+              // 
               const Text(
                 'Oleh \nYehezkiel Arisandi Bulan',
                 textAlign: TextAlign.center,
@@ -50,7 +50,7 @@ class SplashScreen extends StatelessWidget {
 
               const SizedBox(height: 10),
 
-              // Widget Teks untuk menampilkan Keterangan Tambahan
+              // 
               const Text(
                 'UAS Aplikasi Mobile',
                 style: TextStyle(fontSize: 16, color: Colors.black),
@@ -58,7 +58,7 @@ class SplashScreen extends StatelessWidget {
 
               const SizedBox(height: 20),
 
-              // Indikator Dot untuk mempercantik UI Splash Screen
+              // 
               Row(
                 mainAxisAlignment: MainAxisAlignment.center,
                 children: List.generate(4, (index) {
@@ -66,12 +66,12 @@ class SplashScreen extends StatelessWidget {
                     margin: const EdgeInsets.symmetric(horizontal: 4),
                     width: index == 1
                         ? 12
-                        : 8, // Lebar titik indeks ke-1 lebih besar
+                        : 8, // 
                     height: 8,
                     decoration: BoxDecoration(
                       color: index == 1
                           ? Colors
-                                .green // Titik indeks ke-1 diberi warna hijau
+                                .green // 
                           : Colors.grey.shade400,
                       borderRadius: BorderRadius.circular(10),
                     ),
@@ -79,10 +79,10 @@ class SplashScreen extends StatelessWidget {
                 }),
               ),
 
-              // Spacer digunakan untuk mendorong tombol Lanjut ke bagian paling bawah
+              // 
               const Spacer(),
 
-              // Tombol Navigasi untuk berpindah ke Halaman Profil
+              // 
               SizedBox(
                 width: double.infinity,
                 height: 50,
@@ -94,7 +94,7 @@ class SplashScreen extends StatelessWidget {
                     ),
                   ),
                   onPressed: () {
-                    // Navigasi ke halaman TeamProfilePage saat tombol ditekan
+                    //
                     Navigator.push(
                       context,
                       MaterialPageRoute(builder: (context) => SplashScreen4()),
