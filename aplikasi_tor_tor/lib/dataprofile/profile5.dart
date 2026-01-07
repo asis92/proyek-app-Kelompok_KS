@@ -66,6 +66,14 @@ class Profile5 extends StatelessWidget {
                 ],
               ),
             ),
+             const SizedBox(height: 25),
+
+            // INFO KARYAWAN
+             _infoCard(
+              icon: Icons.badge,
+              title: 'ID Karyawan',
+              value: 'EMP-001',
+            ),
 
             const SizedBox(height: 30),
 
@@ -100,4 +108,52 @@ class Profile5 extends StatelessWidget {
       ),
     );
   }
+  
+ static Widget _infoCard({
+    required IconData icon,
+    required String title,
+    required String value,
+  })
+  {
+    return Container(
+      margin: const EdgeInsets.symmetric(horizontal: 20, vertical: 8),
+      padding: const EdgeInsets.all(16),
+      decoration: BoxDecoration(
+        color: Colors.white,
+        borderRadius: BorderRadius.circular(15),
+        boxShadow: [
+          BoxShadow(
+            color: const Color.fromARGB(255, 0, 0, 0),
+            offset: const Offset(0, 3),
+          ),
+        ],
+      ),
+      child: Row(
+        children: [
+          Icon(icon, color: Colors.green),
+          const SizedBox(width: 15),
+          Column(
+            crossAxisAlignment: CrossAxisAlignment.start,
+            children: [
+              Text(
+                title,
+                style: const TextStyle(fontSize: 14, color: Colors.grey),
+              ),
+              const SizedBox(height: 4),
+              Text(
+                value,
+                style: const TextStyle(
+                  fontSize: 16,
+                  fontWeight: FontWeight.bold,
+                ),
+              ),
+            ],
+          ),
+        ],
+      ),
+    );
+  }
+  
 }
+
+
