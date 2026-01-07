@@ -79,10 +79,10 @@ class TeamProfilePage extends StatelessWidget {
                         // 17. Menampilkan jurusan dan program studi anggota tim
                         Text("${member['jurusan']} - ${member['prodi']}"),
                         const SizedBox(height: 12),
-//                         // 18. Menampilkan peran atau keterangan tambahan anggota tim dalam sebuah container dengan latar belakang berwarna
-//                         Container(
-//                           padding: const EdgeInsets.symmetric(horizontal: 12, vertical: 4),
-//                           decoration: BoxDecoration(
+                        // 18. Menampilkan peran anggota tim dalam sebuah container dengan latar belakang hijau muda
+                        Container(
+                          padding: const EdgeInsets.symmetric(horizontal: 12, vertical: 4),
+                          decoration: BoxDecoration(
 //                             // 19. Memberi warna latar belakang hijau muda pada container
 //                             color: Colors.green.withValues(alpha: 0.1),
 //                             borderRadius: BorderRadius.circular(10),
