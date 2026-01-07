@@ -71,8 +71,8 @@ class TeamProfilePage extends StatelessWidget {
                           textAlign: TextAlign.center,
                           style: const TextStyle(fontWeight: FontWeight.bold, fontSize: 18),
                         ),
-//                         // 15. Menambahkan garis pemisah antar elemen informasi
-//                         const Divider(indent: 40, endIndent: 40, thickness: 1),
+                        // 15. Menambahkan garis pemisah antar elemen informasi
+                        const Divider(indent: 40, endIndent: 40, thickness: 1),
 //                         // 16. Menampilkan NIM anggota tim
 //                         Text("NIM: ${member['nim']}"),
 //                         const SizedBox(height: 4),
