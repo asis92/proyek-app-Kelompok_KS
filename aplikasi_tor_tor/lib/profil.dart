@@ -102,14 +102,14 @@ class TeamProfilePage extends StatelessWidget {
               ),
               const SizedBox(height: 20),
               
-//               // 20. Tombol untuk kembali ke halaman Splash Screen
-//               SizedBox(
-//                 width: double.infinity,
-//                 height: 50,
-//                 child: ElevatedButton.icon(
-//                   onPressed: () {
-//                     Navigator.pop(context);
-//                   },
+              // 20. Tombol untuk kembali ke halaman Splash Screen
+              SizedBox(
+                width: double.infinity,
+                height: 50,
+                child: ElevatedButton.icon(
+                  onPressed: () {
+                    Navigator.pop(context);
+                  },
 //                   icon: const Icon(Icons.arrow_back),
 //                   label: const Text(
 //                     "Kembali ke Splash Screen",
