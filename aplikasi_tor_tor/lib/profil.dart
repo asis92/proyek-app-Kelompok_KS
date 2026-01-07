@@ -1,10 +1,10 @@
 import 'package:flutter/material.dart';
 
-// 1. Membuat kelas TeamProfilePage yang merupakan halaman profil anggota tim
+// 1. Membuat halaman profil anggota tim dengan StatelessWidget
 class TeamProfilePage extends StatelessWidget {
   const TeamProfilePage({super.key});
 
-  // 2. Data profil anggota tim disimpan dalam list of map untuk kemudahan pengelolaan
+  // 2. Data anggota tim disimpan dalam list of maps
   final List<Map<String, String>> teamMembers = const [
     {
       "nim": "1125170084",
@@ -12,7 +12,7 @@ class TeamProfilePage extends StatelessWidget {
       "jurusan": "Teknik Informatika",
       "prodi": "Sistem Informasi",
       "role": "UAS Aplikasi Mobile",
-      // 3. Gambar profil diambil dari folder assets/images yang telah didaftarkan di pubspec.yaml
+      // 3. Menentukan path gambar profil anggota tim
       "image": "assets/images/image2.jpeg", 
     },
   ];
