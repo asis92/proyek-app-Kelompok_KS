@@ -25,19 +25,22 @@ class DataProfile2 extends StatelessWidget {
                           colors: [Colors.green, Colors.deepOrangeAccent],
                         ),
                       ),
-                      child: Row(
-                        mainAxisAlignment: MainAxisAlignment.center,
-                        children: [
-                          Container(
-                            decoration: BoxDecoration(
-                              shape: BoxShape.circle
-                              ),
-                              child: CircleAvatar(
-                                radius: 60,
-                                backgroundImage: AssetImage("images/grafica01.png"),
-                              ),
-                          ),
-                        ],
+                      child: Padding(
+                        padding: const EdgeInsets.all(8.0),
+                        child: Row(
+                          mainAxisAlignment: MainAxisAlignment.center,
+                          children: [
+                            Container(
+                              decoration: BoxDecoration(
+                                shape: BoxShape.circle
+                                ),
+                                child: CircleAvatar(
+                                  radius: 60,
+                                  backgroundImage: AssetImage("images/grafica01.png"),
+                                ),
+                            ),
+                          ],
+                        ),
                       ),
                     ),
                   ),
