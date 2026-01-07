@@ -27,7 +27,7 @@ class Card1 extends StatelessWidget {
                 ),
                 child: Padding(
                   padding: const EdgeInsets.all(8.0),
-                  child: Row(
+                  child: Column(
                     mainAxisAlignment: MainAxisAlignment.center,
                     children: [
                       Container(
@@ -45,6 +45,15 @@ class Card1 extends StatelessWidget {
                         child: CircleAvatar(
                           radius: 60,
                           backgroundImage: AssetImage("images/asis.jpeg"),
+                        ),
+                      ),
+                      SizedBox(height: 10),
+                      Text(
+                        "Asis Dwi Saputra",
+                        style: TextStyle(
+                          fontSize: 20.0,
+                          fontWeight: FontWeight.bold,
+                          color: Colors.white,
                         ),
                       ),
                     ],
