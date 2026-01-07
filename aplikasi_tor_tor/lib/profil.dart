@@ -49,15 +49,15 @@ class TeamProfilePage extends StatelessWidget {
                 itemCount: teamMembers.length,
                 itemBuilder: (context, index) {
                   final member = teamMembers[index];
-//                   // 12. Membuat kartu profil untuk setiap anggota tim
-//                   return Card(
-//                     elevation: 4,
-//                     shape: RoundedRectangleBorder(
-//                       borderRadius: BorderRadius.circular(15),
-//                     ),
-//                     child: Column(
-//                       mainAxisAlignment: MainAxisAlignment.center,
-//                       children: [
+                  // 12. Menggunakan Card untuk menampilkan informasi profil anggota tim
+                  return Card(
+                    elevation: 4,
+                    shape: RoundedRectangleBorder(
+                      borderRadius: BorderRadius.circular(15),
+                    ),
+                    child: Column(
+                      mainAxisAlignment: MainAxisAlignment.center,
+                      children: [
 //                         // 13. Widget CircleAvatar untuk menampilkan gambar profil anggota tim
 //                         CircleAvatar(
 //                           radius: 70,
