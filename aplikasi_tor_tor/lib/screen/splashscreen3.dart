@@ -58,7 +58,7 @@ class SplashScreen extends StatelessWidget {
 
               const SizedBox(height: 20),
 
-              // 
+              // Tambah indikator halaman
               Row(
                 mainAxisAlignment: MainAxisAlignment.center,
                 children: List.generate(4, (index) {
