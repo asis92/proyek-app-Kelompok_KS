@@ -37,9 +37,9 @@ class SplashScreen extends StatelessWidget {
 
               const SizedBox(height: 20),
 
-              // 
+              // Tambah teks deskripsi aplikasi
               const Text(
-                'Oleh \nYehezkiel Arisandi Bulan',
+                'Oleh \nYehezkiel Arisandi Bulan', // 
                 textAlign: TextAlign.center,
                 style: TextStyle(
                   fontSize: 18,
