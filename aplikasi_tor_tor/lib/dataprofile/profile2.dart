@@ -74,19 +74,19 @@ class DataProfile2 extends StatelessWidget {
                               children: [
                                 Column(
                                   children: [
-                                    Text("100",
+                                    Text("Pekerjaan",
                                       style: TextStyle(
                                         fontSize: 22.0,
                                         fontWeight: FontWeight.bold,
-                                        color: Colors.black
+                                        color: Colors.yellow,
                                       ),
                                     ),
                                     SizedBox(height: 5),
-                                    Text("Follower",
+                                    Text("Karyawan Swasta",
                                       style: TextStyle(
                                         fontSize: 14.0,
                                         fontWeight: FontWeight.bold,
-                                        color: Colors.white.withValues(alpha: 0.5),
+                                        color: Colors.yellow.withValues(alpha: 0.5),
                                       ),
                                     ),
                                   ],
@@ -97,19 +97,19 @@ class DataProfile2 extends StatelessWidget {
                                 ),
                                 Column(
                                   children: [
-                                    Text("100",
+                                    Text("Status",
                                       style: TextStyle(
                                         fontSize: 22.0,
                                         fontWeight: FontWeight.bold,
-                                        color: Colors.black
+                                        color: Colors.yellow
                                       ),
                                     ),
                                     SizedBox(height: 5),
-                                    Text("Follower",
+                                    Text("Menikah",
                                       style: TextStyle(
                                         fontSize: 14.0,
                                         fontWeight: FontWeight.bold,
-                                        color: Colors.white.withValues(alpha: 0.5),
+                                        color: Colors.yellow.withValues(alpha: 0.5),
                                       ),
                                     ),
                                   ],
@@ -120,19 +120,19 @@ class DataProfile2 extends StatelessWidget {
                                 ),
                                 Column(
                                   children: [
-                                    Text("100",
+                                    Text("Alamat",
                                       style: TextStyle(
                                         fontSize: 22.0,
                                         fontWeight: FontWeight.bold,
-                                        color: Colors.black
+                                        color: Colors.yellow
                                       ),
                                     ),
                                     SizedBox(height: 5),
-                                    Text("Follower",
+                                    Text("Kota Tangerang",
                                       style: TextStyle(
                                         fontSize: 14.0,
                                         fontWeight: FontWeight.bold,
-                                        color: Colors.white.withValues(alpha: 0.5),
+                                        color: Colors.yellow.withValues(alpha: 0.5),
                                       ),
                                     ),
                                   ],
