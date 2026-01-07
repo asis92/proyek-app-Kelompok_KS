@@ -32,7 +32,8 @@ class DataProfile2 extends StatelessWidget {
                           children: [
                             Container(
                               decoration: BoxDecoration(
-                                shape: BoxShape.circle
+                                shape: BoxShape.circle,
+                                border: Border.all(color: Colors.white, width: 6),
                                 ),
                                 child: CircleAvatar(
                                   radius: 60,
