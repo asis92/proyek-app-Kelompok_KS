@@ -78,7 +78,7 @@ class Card1 extends StatelessWidget {
                           Column(
                             children: [
                               Text(
-                                "100",
+                                "Alamat",
                                 style: TextStyle(
                                   fontSize: 22.0,
                                   fontWeight: FontWeight.bold,
@@ -87,7 +87,7 @@ class Card1 extends StatelessWidget {
                               ),
                               SizedBox(height: 5),
                               Text(
-                                "Tahun",
+                                "Sepatan",
                                 style: TextStyle(
                                   fontSize: 14.0,
                                   fontWeight: FontWeight.bold,
@@ -107,7 +107,7 @@ class Card1 extends StatelessWidget {
                           Column(
                             children: [
                               Text(
-                                "100",
+                                "Status",
                                 style: TextStyle(
                                   fontSize: 22.0,
                                   fontWeight: FontWeight.bold,
@@ -116,7 +116,7 @@ class Card1 extends StatelessWidget {
                               ),
                               SizedBox(height: 5),
                               Text(
-                                "Tahun",
+                                "Menikah",
                                 style: TextStyle(
                                   fontSize: 14.0,
                                   fontWeight: FontWeight.bold,
@@ -136,7 +136,7 @@ class Card1 extends StatelessWidget {
                           Column(
                             children: [
                               Text(
-                                "100",
+                                "Pekerjaan",
                                 style: TextStyle(
                                   fontSize: 22.0,
                                   fontWeight: FontWeight.bold,
@@ -145,7 +145,7 @@ class Card1 extends StatelessWidget {
                               ),
                               SizedBox(height: 5),
                               Text(
-                                "Tahun",
+                                "ASN",
                                 style: TextStyle(
                                   fontSize: 14.0,
                                   fontWeight: FontWeight.bold,
