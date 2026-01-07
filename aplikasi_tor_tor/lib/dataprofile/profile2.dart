@@ -25,15 +25,17 @@ class DataProfile2 extends StatelessWidget {
                           colors: [Colors.green, Colors.deepOrangeAccent],
                         ),
                       ),
-                      child: Text("text",
-                        style: TextStyle(
-                          fontSize: 20.0,
+                      child: Row(
+                        children: [
+                          
+                        ],
+                      )
                         ),
-                      ),,
+                      ),
                     ),
-                  )
+                  ),
                 ],
-              )
+              ),
             ),
           );
   }
