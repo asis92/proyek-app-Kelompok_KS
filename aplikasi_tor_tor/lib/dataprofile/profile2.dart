@@ -26,6 +26,7 @@ class DataProfile2 extends StatelessWidget {
                         ),
                       ),
                       child: Row(
+                        mainAxisAlignment: MainAxisAlignment.center,
                         children: [
                           Container(
                             decoration: BoxDecoration(
