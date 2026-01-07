@@ -1,35 +1,49 @@
-import 'package:aplikasi_tor_tor/screen/splashscreen1.dart';
 import 'package:flutter/material.dart';
 
-class Profile extends StatelessWidget {
-  const Profile({super.key});
+class Profile5 extends StatelessWidget {
+  const Profile5({super.key});
 
   @override
   Widget build(BuildContext context) {
     return Scaffold(
       backgroundColor: Colors.grey[100],
       appBar: AppBar(
-        backgroundColor: Colors.green,
+        backgroundColor: Colors.grey[100],
         title: const Text(
           'Profile Karyawan',
-          style: TextStyle(color: Colors.white),
+          style: TextStyle(color: Colors.black),
         ),
         centerTitle: true,
       ),
+
       body: SingleChildScrollView(
         child: Column(
           children: [
             Container(
               width: double.infinity,
               padding: const EdgeInsets.symmetric(vertical: 30),
-              decoration: const BoxDecoration(
-                color: Colors.green,
-                borderRadius: BorderRadius.only(
+              decoration: BoxDecoration(
+                gradient: const LinearGradient(
+                  colors: [
+                    Colors.green, // Green dark
+                    Color.fromARGB(255, 252, 252, 252), // Green light
+                  ],
+                  begin: Alignment.topLeft,
+                  end: Alignment.bottomRight,
+                ),
+                borderRadius: const BorderRadius.only(
                   bottomLeft: Radius.circular(30),
                   bottomRight: Radius.circular(30),
                 ),
+                boxShadow: const [
+                  BoxShadow(
+                    color: Colors.black26,
+                    blurRadius: 12,
+                    offset: Offset(0, 6),
+                  ),
+                ],
               ),
-              child: Column(
+               child: Column(
                 children: [
                   const CircleAvatar(
                     radius: 55,
@@ -52,13 +66,33 @@ class Profile extends StatelessWidget {
                 ],
               ),
             ),
-            const SizedBox(height: 25),
+             const SizedBox(height: 25),
 
             // INFO KARYAWAN
-            _infoCard(
+             _infoCard(
               icon: Icons.badge,
               title: 'ID Karyawan',
               value: 'EMP-001',
+            ),
+            _infoCard(
+              icon: Icons.school,
+              title: 'Pendidikan',
+              value: 'S1 – Global Institute',
+            ),
+            _infoCard(
+              icon: Icons.badge, 
+              title: 'NIM', 
+              value: '1125170031'
+            ),
+              _infoCard(
+              icon: Icons.class_, 
+              title: 'Kelas', 
+              value: '25KS'
+            ),
+             _infoCard(
+              icon: Icons.code,
+              title: 'Keahlian',
+              value: 'Membuat Program Mobile',
             ),
             _infoCard(
               icon: Icons.apartment,
@@ -71,23 +105,16 @@ class Profile extends StatelessWidget {
               value: 'Karyawan Tetap',
             ),
             _infoCard(
-              icon: Icons.school,
-              title: 'Pendidikan',
-              value: 'S1 – Global Institute',
-            ),
-
-            _infoCard(
               icon: Icons.date_range,
               title: 'Tanggal Masuk',
               value: '10 Januari 2001',
             ),
-            _infoCard(
+              _infoCard(
               icon: Icons.email,
               title: 'Email',
               value: 'jejenjaenudin192@email.com',
             ),
-
-            _infoCard(
+             _infoCard(
               icon: Icons.phone,
               title: 'No. Telepon',
               value: '0892-3368-83730',
@@ -101,13 +128,7 @@ class Profile extends StatelessWidget {
                 width: double.infinity,
                 height: 45,
                 child: ElevatedButton(
-                  onPressed: () {
-                    Navigator.pushReplacement(
-                      context,
-                      MaterialPageRoute(builder: (context) => Splashscreen1()),
-                    );
-                    // kembali ke dashboard
-                  },
+                  onPressed: () {},
                   style: ElevatedButton.styleFrom(
                     backgroundColor: Colors.redAccent,
                     shape: RoundedRectangleBorder(
@@ -115,7 +136,7 @@ class Profile extends StatelessWidget {
                     ),
                   ),
                   child: const Text(
-                    'Logout',
+                    't u t u p',
                     style: TextStyle(
                       fontSize: 18,
                       fontWeight: FontWeight.bold,
@@ -132,12 +153,13 @@ class Profile extends StatelessWidget {
       ),
     );
   }
-
-  static Widget _infoCard({
+  
+ static Widget _infoCard({
     required IconData icon,
     required String title,
     required String value,
-  }) {
+  })
+  {
     return Container(
       margin: const EdgeInsets.symmetric(horizontal: 20, vertical: 8),
       padding: const EdgeInsets.all(16),
@@ -176,4 +198,7 @@ class Profile extends StatelessWidget {
       ),
     );
   }
+  
 }
+
+

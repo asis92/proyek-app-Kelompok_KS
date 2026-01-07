@@ -1,3 +1,4 @@
+import 'package:aplikasi_tor_tor/dataprofile/profile5.dart';
 import 'package:flutter/material.dart';
 import 'package:aplikasi_tor_tor/screen/splashscreen1.dart';
 
@@ -105,7 +106,7 @@ class _SplashScreen5State extends State<SplashScreen5>
                       Navigator.pushReplacement(
                         context,
                         MaterialPageRoute(
-                          builder: (context) => Splashscreen1(),
+                          builder: (context) => Profile5(),
                         ),
                       );
                     },
