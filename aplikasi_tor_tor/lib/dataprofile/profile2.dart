@@ -70,6 +70,7 @@ class DataProfile2 extends StatelessWidget {
                             ),
                             SizedBox(height: 10),
                             Row(
+                              mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                               children: [
                                 Text("Column 1",
                                   style: TextStyle(
