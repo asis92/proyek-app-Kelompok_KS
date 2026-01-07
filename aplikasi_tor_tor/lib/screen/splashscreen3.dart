@@ -17,7 +17,7 @@ class SplashScreen extends StatelessWidget {
             children: [
               const SizedBox(height: 20),
 
-              // 
+              // Tambah Align untuk menempatkan teks di tengah
               const Align(
                 alignment: Alignment.center,
                 child: Text(
