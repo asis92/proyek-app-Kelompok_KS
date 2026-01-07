@@ -106,7 +106,7 @@ class _SplashScreen5State extends State<SplashScreen5>
                       Navigator.pushReplacement(
                         context,
                         MaterialPageRoute(
-                          builder: (context) => Profile(),
+                          builder: (context) => Profile5(),
                         ),
                       );
                     },
