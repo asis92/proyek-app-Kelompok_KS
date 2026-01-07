@@ -13,7 +13,7 @@ class profile4 extends StatelessWidget {
           children: [
             const CircleAvatar(
               radius: 50,
-              backgroundImage: AssetImage('assets/foto_a.png'),
+              backgroundImage: AssetImage('assets/images/foto.jpeg'),
             ),
             const SizedBox(height: 20),
             const Text(
