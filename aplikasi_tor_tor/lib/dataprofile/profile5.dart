@@ -9,10 +9,10 @@ class Profile extends StatelessWidget {
     return Scaffold(
       backgroundColor: Colors.grey[100],
       appBar: AppBar(
-        backgroundColor: Colors.green,
+        backgroundColor: Colors.grey[100],
         title: const Text(
           'Profile Karyawan',
-          style: TextStyle(color: Colors.white),
+          style: TextStyle(color: Colors.black),
         ),
         centerTitle: true,
       ),
@@ -22,13 +22,35 @@ class Profile extends StatelessWidget {
             Container(
               width: double.infinity,
               padding: const EdgeInsets.symmetric(vertical: 30),
-              decoration: const BoxDecoration(
-                color: Colors.green,
-                borderRadius: BorderRadius.only(
-                  bottomLeft: Radius.circular(30),
-                  bottomRight: Radius.circular(30),
-                ),
-              ),
+              decoration: BoxDecoration(
+  gradient: const LinearGradient(
+    colors: [
+      Colors.green, // Green dark
+      Color.fromARGB(255, 252, 252, 252), // Green light
+    ],
+    begin: Alignment.topLeft,
+    end: Alignment.bottomRight,
+  ),
+  borderRadius: const BorderRadius.only(
+    bottomLeft: Radius.circular(30),
+    bottomRight: Radius.circular(30),
+  ),
+  boxShadow: const [
+    BoxShadow(
+      color: Colors.black26,
+      blurRadius: 12,
+      offset: Offset(0, 6),
+    ),
+  ],
+),
+
+              // decoration: const BoxDecoration(
+              //   color: Colors.green,
+              //   borderRadius: BorderRadius.only(
+              //     bottomLeft: Radius.circular(30),
+              //     bottomRight: Radius.circular(30),
+              //   ),
+              // ),
               child: Column(
                 children: [
                   const CircleAvatar(
@@ -55,12 +77,27 @@ class Profile extends StatelessWidget {
             const SizedBox(height: 25),
 
             // INFO KARYAWAN
-            _infoCard(
+             _infoCard(
               icon: Icons.badge,
               title: 'ID Karyawan',
               value: 'EMP-001',
             ),
             _infoCard(
+              icon: Icons.school,
+              title: 'Pendidikan',
+              value: 'S1 – Global Institute',
+            ),
+            _infoCard(icon: Icons.badge, title: 'NIM', value: '1125170031'),
+
+            _infoCard(icon: Icons.class_, title: 'Kelas', value: '25KS'),
+
+            _infoCard(
+              icon: Icons.code,
+              title: 'Keahlian',
+              value: 'Membuat Program Mobile',
+            ),
+
+           _infoCard(
               icon: Icons.apartment,
               title: 'Divisi',
               value: 'Information Technology',
@@ -70,12 +107,6 @@ class Profile extends StatelessWidget {
               title: 'Status',
               value: 'Karyawan Tetap',
             ),
-            _infoCard(
-              icon: Icons.school,
-              title: 'Pendidikan',
-              value: 'S1 – Global Institute',
-            ),
-
             _infoCard(
               icon: Icons.date_range,
               title: 'Tanggal Masuk',
@@ -115,7 +146,7 @@ class Profile extends StatelessWidget {
                     ),
                   ),
                   child: const Text(
-                    'Logout',
+                    't u t u p',
                     style: TextStyle(
                       fontSize: 18,
                       fontWeight: FontWeight.bold,
