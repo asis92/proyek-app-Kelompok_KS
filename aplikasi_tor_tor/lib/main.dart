@@ -1,5 +1,4 @@
 import 'package:aplikasi_tor_tor/dataprofile/profile2.dart';
-import 'package:aplikasi_tor_tor/screen/splashscreen1.dart';
 import 'package:flutter/material.dart';
 
 

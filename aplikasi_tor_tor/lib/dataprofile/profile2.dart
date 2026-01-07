@@ -5,6 +5,36 @@ class DataProfile2 extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return const Placeholder();
+    return Scaffold(
+            appBar: AppBar(
+              title: const Text("Data Profile Grafica Jati Sugiyarto"),
+              actions: const [],
+            ),
+            body: SingleChildScrollView(
+              child: Column(
+                children: [
+                  Card(
+                    elevation: 8,
+                    shadowColor: Colors.cyanAccent,
+                    clipBehavior: Clip.antiAlias,
+                    child: Container(
+                      decoration: BoxDecoration(
+                        gradient: LinearGradient(
+                          begin: Alignment.topRight,
+                          end: Alignment.bottomLeft,
+                          colors: [Colors.green, Colors.deepOrangeAccent],
+                        ),
+                      ),
+                      child: Text("text",
+                        style: TextStyle(
+                          fontSize: 20.0,
+                        ),
+                      ),,
+                    ),
+                  )
+                ],
+              )
+            ),
+          );
   }
 }
