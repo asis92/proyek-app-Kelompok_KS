@@ -104,7 +104,27 @@ class Card1 extends StatelessWidget {
                               width: 2,
                             ),
                           ),
-                          Text("text 1", style: TextStyle(fontSize: 10.0)),
+                          Column(
+                            children: [
+                              Text(
+                                "100",
+                                style: TextStyle(
+                                  fontSize: 22.0,
+                                  fontWeight: FontWeight.bold,
+                                  color: Colors.white,
+                                ),
+                              ),
+                              SizedBox(height: 5),
+                              Text(
+                                "Tahun",
+                                style: TextStyle(
+                                  fontSize: 14.0,
+                                  fontWeight: FontWeight.bold,
+                                  color: Colors.white.withValues(alpha: 0.5),
+                                ),
+                              ),
+                            ],
+                          ),
                           SizedBox(
                             height: 40,
                             child: VerticalDivider(
@@ -113,7 +133,27 @@ class Card1 extends StatelessWidget {
                               width: 2,
                             ),
                           ),
-                          Text("text 1", style: TextStyle(fontSize: 10.0)),
+                          Column(
+                            children: [
+                              Text(
+                                "100",
+                                style: TextStyle(
+                                  fontSize: 22.0,
+                                  fontWeight: FontWeight.bold,
+                                  color: Colors.white,
+                                ),
+                              ),
+                              SizedBox(height: 5),
+                              Text(
+                                "Tahun",
+                                style: TextStyle(
+                                  fontSize: 14.0,
+                                  fontWeight: FontWeight.bold,
+                                  color: Colors.white.withValues(alpha: 0.5),
+                                ),
+                              ),
+                            ],
+                          ),
                         ],
                       ),
                     ],
