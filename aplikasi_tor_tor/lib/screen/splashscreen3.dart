@@ -94,14 +94,14 @@ class SplashScreen extends StatelessWidget {
                     ),
                   ),
                   onPressed: () {
-                    // Navigasi ke SplashScreen4 saat tombol ditekan
+                    // Tambah Navigasi ke SplashScreen4 saat tombol ditekan
                     Navigator.push(
                       context,
                       MaterialPageRoute(builder: (context) => SplashScreen4()),
                     );
                   },
                   child: const Text(
-                    'Lanjut',
+                    'Lanjut', // Teks pada tombol
                     style: TextStyle(
                       fontSize: 18,
                       fontWeight: FontWeight.bold,
