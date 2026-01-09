@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 
-class Profile4 extends StatelessWidget {
-  const Profile4({super.key});
+class profile4 extends StatelessWidget {
+  const profile4({super.key});
 
   @override
   Widget build(BuildContext context) {
@@ -13,7 +13,7 @@ class Profile4 extends StatelessWidget {
           children: [
             const CircleAvatar(
               radius: 50,
-              backgroundImage: AssetImage('assets/images/foto.jpeg'),
+              backgroundImage: AssetImage('assets/images/anggie.jpeg'),
             ),
             const SizedBox(height: 20),
             const Text(
