@@ -16,5 +16,5 @@ class _MyHomePageState extends State<MyHomePage> { // ubah menjadi State<MyHomeP
     @override
   void initState() { // metode initState untuk inisialisasi
     super.initState();
-    setupFCM();
+    setupFCM(); // Panggil setupFCM untuk mengatur Firebase Cloud Messaging
   }
