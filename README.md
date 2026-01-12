@@ -36,14 +36,17 @@ Dengan berbagai fitur pendukung lainnya seperti pemilihan kamar, pemesanan dan l
 - ...
 - ...
 
-## Screenshots
+## Screenshots Data Profile
 
 <div align="center">
-  <img src="aplikasi_tor_tor/assets/images/asis.jpeg" alt="Splash Screen" width="200"/>
-  <img src="screenshots/login_screen.png" alt="Login" width="200"/>
-  <img src="screenshots/home_screen.png" alt="Home" width="200"/>
-  <img src="screenshots/profile_screen.png" alt="Profile" width="200"/>
+  <img src="aplikasi_tor_tor/assets/images/Profileasis.png" alt="Splash Screen" width="200"/>
+  <img src="aplikasi_tor_tor/assets/images/Profilegrafica.png" alt="Splash Screen" width="200"/>
+  <img src="aplikasi_tor_tor/assets/images/Profileyehezkiel.png" alt="Splash Screen" width="200"/>
+  <img src="aplikasi_tor_tor/assets/images/Profileanggie.png" alt="Splash Screen" width="200"/>
+  <img src="aplikasi_tor_tor/assets/images/Profilejejen.png" alt="Splash Screen" width="200"/>
 </div>
+
+## Screenshots Splashscreen
 
 <div align="center">
   <img src="screenshots/note_detail.png" alt="Note Detail" width="200"/>
