@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "497753420060",
+    "project_id": "flutternotif-9884f",
+    "storage_bucket": "flutternotif-9884f.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:497753420060:android:35bf1a2708102ffeb68ad9",
+        "android_client_info": {
+          "package_name": "id.ac.kampus.bookinghotel"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyB8BHLzKLBlmHxAZ7rGmjgFGhD5tfszO_8"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
