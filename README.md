@@ -151,10 +151,6 @@ lib/
 │   ├── splashscreen3.dart
 │   ├── splashscreen4.dart
 │   ├── splashscreen5.dart
-│   │
-│   ├── home/
-│   ├── profile/
-│   └── settings/
 ├── widgets/                  # Reusable widgets
 ├── services/                 # Business logic
 │   ├── auth_service.dart
