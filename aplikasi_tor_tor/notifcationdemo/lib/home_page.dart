@@ -28,4 +28,7 @@ class _MyHomePageState extends State<MyHomePage> { // ubah menjadi State<MyHomeP
         // Minta izin notifikasi ke user
     await messaging.requestPermission(); // Minta izin notifikasi
 
-        // Dapatkan token FCM untuk perangkat ini
+        // Ambil token FCM
+    String? token = await messaging.getToken();
+    print("TOKEN SAYA: $token");
+
