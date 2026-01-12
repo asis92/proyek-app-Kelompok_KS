@@ -11,4 +11,4 @@ class MyHomePage extends StatefulWidget {
 }
 
 class _MyHomePageState extends State<MyHomePage> { // ubah menjadi State<MyHomePage>
-  String _message = "No message received yet, waiting...";
+  String _message = "No message received yet, waiting..."; // Variable to hold the message
