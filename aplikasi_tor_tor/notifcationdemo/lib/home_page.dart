@@ -9,3 +9,6 @@ class MyHomePage extends StatefulWidget {
    @override
   State<MyHomePage> createState() => _MyHomePageState(); // ubah menjadi StatefulWidget
 }
+
+class _MyHomePageState extends State<MyHomePage> { // ubah menjadi State<MyHomePage>
+  String _message = "No message received yet, waiting...";
