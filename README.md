@@ -145,6 +145,12 @@ lib/
 │   ├── profile3.dart
 │   ├── profile4.dart
 │   ├── profile5.dart
+├── screen/                  # UI Screens
+│   ├── splashscreen1.dart
+│   ├── splashscreen2.dart
+│   ├── splashscreen3.dart
+│   ├── splashscreen4.dart
+│   ├── splashscreen5.dart
 │   │
 │   ├── home/
 │   ├── profile/
