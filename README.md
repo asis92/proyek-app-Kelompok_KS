@@ -207,7 +207,7 @@ CREATE TABLE tableABC (
 
 | Name | Role | Contributions |
 |------|------|---------------|
-| **Asis Dwi Saputra** | Project Lead & Backend Developer | - Authentication system<br>- Firebase integration<br>- API development<br>- Database design |
+| **Asis Dwi Saputra** | Project Lead & Backend Developer | - Authentication system<br> -Splash screen<br> -Data Profile<br>|
 | **Grafica Jati Sugiyarto** | Frontend Developer | - Splash screen<br> -Data Profile<br>|
 | **Anggie Aditya Saputra** | Full Stack Developer | - Splash screen<br> -Data Profile<br>|
 | **Yehezkiel Arisandi Bulan** | Mobile Developer | - Splash screen<br> -Data Profile<br>|
