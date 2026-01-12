@@ -30,5 +30,7 @@ class _MyHomePageState extends State<MyHomePage> { // ubah menjadi State<MyHomeP
 
         // Ambil token FCM
     String? token = await messaging.getToken();
-    print("TOKEN SAYA: $token");
+    print("TOKEN SAYA: $token"); // Cetak token ke konsol
+
+        // Dengarkan pesan masuk saat aplikasi aktif
 
