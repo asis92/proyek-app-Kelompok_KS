@@ -37,7 +37,7 @@ class _MyHomePageState extends State<MyHomePage> { // ubah menjadi State<MyHomeP
       if (message.notification != null) {
         setState(() {
           _message =
-              "${message.notification!.title}: ${message.notification!.body}";
+              "${message.notification!.title}: ${message.notification!.body}"; // Perbarui pesan dengan judul dan isi notifikasi
         });
       }
     });
