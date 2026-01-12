@@ -39,7 +39,7 @@ Dengan berbagai fitur pendukung lainnya seperti pemilihan kamar, pemesanan dan l
 ## Screenshots
 
 <div align="center">
-  <img src="screenshots/splash_screen.png" alt="Splash Screen" width="200"/>
+  <img src="assets/images/asis.jpeg" alt="Splash Screen" width="200"/>
   <img src="screenshots/login_screen.png" alt="Login" width="200"/>
   <img src="screenshots/home_screen.png" alt="Home" width="200"/>
   <img src="screenshots/profile_screen.png" alt="Profile" width="200"/>
