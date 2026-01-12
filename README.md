@@ -235,6 +235,6 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 ---
 
 <div align="center">
-  <p>Made with by .... Team</p>
+  <p>Made with by KS Team</p>
   <p>© 2026 Notes App. All rights reserved.</p>
 </div>
