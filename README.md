@@ -21,9 +21,9 @@ https://global.ac.id/
 
 ## About The Project
 
-..... adalah aplikasi mobile modern yang dikembangkan menggunakan Flutter untuk membantu ....... menyediakan antarmuka yang intuitif, fitur sinkronisasi cloud menggunakan firebase authentication , firebase store, ..... dan .......
+Aplikasi Booking Hotel adalah aplikasi mobile modern yang dikembangkan menggunakan Flutter untuk membantu pengguna dalam melakukan pemesanan kamar hotel secara online, menyediakan antarmuka yang intuitif, fitur sinkronisasi cloud menggunakan Firebase Authentication, Cloud Firestore, Firebase Storage, dan Firebase Cloud Messaging.
 
-Dengan .............. lain.
+Dengan berbagai fitur pendukung lainnya seperti pemilihan kamar, pemesanan dan lainnya.
 
 ### Key Features
 
