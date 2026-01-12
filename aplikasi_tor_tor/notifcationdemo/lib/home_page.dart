@@ -18,3 +18,7 @@ class _MyHomePageState extends State<MyHomePage> { // ubah menjadi State<MyHomeP
     super.initState();
     setupFCM(); // Panggil setupFCM untuk mengatur Firebase Cloud Messaging
   }
+
+    // Konfigurasi Firebase Cloud Messaging
+  Future<void> setupFCM() async {
+    print("Setting up Firebase Cloud Messaging...");
