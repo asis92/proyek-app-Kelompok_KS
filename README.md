@@ -208,10 +208,10 @@ CREATE TABLE tableABC (
 | Name | Role | Contributions |
 |------|------|---------------|
 | **Asis Dwi Saputra** | Project Lead & Backend Developer | - Authentication system<br>- Firebase integration<br>- API development<br>- Database design |
-| **Grafica Jati Sugiyarto** | Frontend Developer | - UI/UX Design<br>- Home screen implementation<br>- Profile screen<br>- State management |
-| **Anggie Aditya Saputra** | Full Stack Developer | - Splash screen<br>- Register screen<br>- Notification system<br>- Push notifications (FCM) |
-| **Yehezkiel Arisandi Bulan** | Mobile Developer | - Login screen<br>- Local database (SQLite)<br>- Offline sync logic<br>- Testing & QA |
-| **Jejen Jaenudin** | Mobile Developer | - Login screen<br>- Local database (SQLite)<br>- Offline sync logic<br>- Testing & QA |
+| **Grafica Jati Sugiyarto** | Frontend Developer | - Splash screen<br> -Data Profile<br>|
+| **Anggie Aditya Saputra** | Full Stack Developer | - Splash screen<br> -Data Profile<br>|
+| **Yehezkiel Arisandi Bulan** | Mobile Developer | - Splash screen<br> -Data Profile<br>|
+| **Jejen Jaenudin** | Mobile Developer | -- Splash screen<br> -Data Profile<br>|
 
 
 ## 📄 License
