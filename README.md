@@ -95,8 +95,7 @@ Pastikan Anda sudah menginstall:
 
 1. Clone repository
 ```bash
-git clone https://github.com/yourusername/notes-app.git
-cd notes-app
+git clone https://github.com/asis92/proyek-app-Kelompok_KS
 ```
 
 2. Install dependencies
@@ -140,11 +139,13 @@ lib/
 ├── models/                   # Data models
 │   ├── user.dart
 │   └── category.dart
-├── screens/                  # UI Screens
-│   ├── splash/
-│   ├── auth/
-│   │   ├── login_screen.dart
-│   │   └── register_screen.dart
+├── dataprofile/                  # UI Screens
+│   ├── profile1.dart
+│   ├── profile2.dart
+│   ├── profile3.dart
+│   ├── profile4.dart
+│   ├── profile5.dart
+│   │
 │   ├── home/
 │   ├── profile/
 │   └── settings/
