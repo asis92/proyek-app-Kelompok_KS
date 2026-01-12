@@ -4,4 +4,8 @@ import 'package:firebase_messaging/firebase_messaging.dart'; // Import Firebase 
 class MyHomePage extends StatefulWidget {
   const MyHomePage({super.key, required this.title});
 
-  final String title; // tambah title untuk judul halaman
+  final String title; // tambah title untuk judul 
+  
+   @override
+  State<MyHomePage> createState() => _MyHomePageState(); // ubah menjadi StatefulWidget
+}
