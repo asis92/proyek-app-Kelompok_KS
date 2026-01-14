@@ -8,7 +8,7 @@ class Dashboard extends StatefulWidget {
 }
 
 class _DashboardState extends State<Dashboard> {
-   int selectedCity = 0;
+  int selectedCity = 0;
 
   final List<String> cities = [
     "Jakarta",
@@ -30,7 +30,7 @@ class _DashboardState extends State<Dashboard> {
       "rating": "9.0",
       "review": "1,4rb ulasan",
       "price": "Rp 390.770",
-      "discount": "Hemat 25%"
+      "discount": "Hemat 25%",
     },
     {
       "image": "assets/images/hotel22.jpeg",
@@ -39,7 +39,7 @@ class _DashboardState extends State<Dashboard> {
       "rating": "8.4",
       "review": "10,5rb ulasan",
       "price": "Rp 819.001",
-      "discount": "Hemat 25%"
+      "discount": "Hemat 25%",
     },
     {
       "image": "assets/images/hotel3.jpeg",
@@ -48,21 +48,20 @@ class _DashboardState extends State<Dashboard> {
       "rating": "9.0",
       "review": "1,3rb ulasan",
       "price": "Rp 1.029.247",
-      "discount": "Hemat 25%"
+      "discount": "Hemat 25%",
     },
   ];
-  
- final List<Map<String, String>> promoHotel = [
+
+  final List<Map<String, String>> promoHotel = [
     {"image": "assets/images/promo11.jpg"},
     {"image": "assets/images/promo2.jpg"},
     {"image": "assets/images/promo3.jpg"},
     {"image": "assets/images/promo1.jpg"},
   ];
-  
- 
+
   @override
   Widget build(BuildContext context) {
-     final screenWidth = MediaQuery.of(context).size.width;
+    final screenWidth = MediaQuery.of(context).size.width;
     return Scaffold(
       backgroundColor: Colors.grey[100],
 
@@ -70,7 +69,7 @@ class _DashboardState extends State<Dashboard> {
         child: Column(
           crossAxisAlignment: CrossAxisAlignment.start,
           children: [
-           SizedBox(
+            SizedBox(
               height: 280,
               child: Stack(
                 fit: StackFit.expand,
@@ -80,7 +79,7 @@ class _DashboardState extends State<Dashboard> {
                     fit: BoxFit.cover,
                   ),
 
-                Container(
+                  Container(
                     decoration: BoxDecoration(
                       gradient: LinearGradient(
                         begin: Alignment.bottomCenter,
@@ -110,16 +109,12 @@ class _DashboardState extends State<Dashboard> {
                         SizedBox(height: 10),
                         Text(
                           "Nikmati liburan terbaik dengan hotel pilihanmu",
-                          style: TextStyle(
-                            color: Colors.white70,
-                            fontSize: 16,
-                          ),
+                          style: TextStyle(color: Colors.white70, fontSize: 16),
                         ),
                       ],
                     ),
                   ),
                 ],
-
               ),
             ),
             SizedBox(height: 20),
@@ -128,25 +123,24 @@ class _DashboardState extends State<Dashboard> {
               child: Column(
                 crossAxisAlignment: CrossAxisAlignment.start,
                 children: [
-                 
                   sectionTitle("Ayo Jelajah Indonesia"),
                   cityTabs(),
                   const SizedBox(height: 15),
                   jelajahHotelList(),
                   const SizedBox(height: 30),
-                 sectionTitle(
+                  sectionTitle(
                     "Booking Hotel & Penginapan Murah dengan Harga Promo",
                   ),
                   promoImageList(screenWidth),
                 ],
               ),
             ),
-
           ],
         ),
       ),
     );
   }
+
   Widget promoImageList(double screenWidth) {
     return SizedBox(
       height: 160,
@@ -169,19 +163,17 @@ class _DashboardState extends State<Dashboard> {
       ),
     );
   }
-   Widget sectionTitle(String title) {
+
+  Widget sectionTitle(String title) {
     return Padding(
       padding: const EdgeInsets.only(bottom: 12),
       child: Text(
         title,
-        style: const TextStyle(
-          fontSize: 20,
-          fontWeight: FontWeight.bold,
-        ),
+        style: const TextStyle(fontSize: 20, fontWeight: FontWeight.bold),
       ),
     );
   }
-  
+
   Widget cityTabs() {
     return SizedBox(
       height: 40,
@@ -210,7 +202,7 @@ class _DashboardState extends State<Dashboard> {
       ),
     );
   }
-  
+
   Widget jelajahHotelList() {
     return SizedBox(
       height: 320,
@@ -263,9 +255,7 @@ class _DashboardState extends State<Dashboard> {
                         hotel["name"]!,
                         maxLines: 2,
                         overflow: TextOverflow.ellipsis,
-                        style: const TextStyle(
-                          fontWeight: FontWeight.bold,
-                        ),
+                        style: const TextStyle(fontWeight: FontWeight.bold),
                       ),
                       const SizedBox(height: 6),
                       Text(
@@ -294,6 +284,7 @@ class _DashboardState extends State<Dashboard> {
       ),
     );
   }
+
   Widget chip(String text) {
     return Container(
       padding: const EdgeInsets.symmetric(horizontal: 8, vertical: 4),
@@ -307,7 +298,8 @@ class _DashboardState extends State<Dashboard> {
       ),
     );
   }
-   Widget discountChip(String text) {
+
+  Widget discountChip(String text) {
     return Container(
       padding: const EdgeInsets.symmetric(horizontal: 8, vertical: 4),
       decoration: BoxDecoration(
