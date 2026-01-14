@@ -22,6 +22,35 @@ class _DashboardState extends State<Dashboard> {
     "Malang",
     "Medan",
   ];
+  final List<Map<String, String>> jelajahHotel = [
+    {
+      "image": "assets/images/hotel1.jpeg",
+      "location": "Kebon Sirih",
+      "name": "Horison Ultima Menteng Jakarta",
+      "rating": "9.0",
+      "review": "1,4rb ulasan",
+      "price": "Rp 390.770",
+      "discount": "Hemat 25%"
+    },
+    {
+      "image": "assets/images/hotel22.jpeg",
+      "location": "Senen",
+      "name": "Lumire Hotel & Convention Center",
+      "rating": "8.4",
+      "review": "10,5rb ulasan",
+      "price": "Rp 819.001",
+      "discount": "Hemat 25%"
+    },
+    {
+      "image": "assets/images/hotel3.jpeg",
+      "location": "Tanah Abang",
+      "name": "Ashley Tanah Abang",
+      "rating": "9.0",
+      "review": "1,3rb ulasan",
+      "price": "Rp 1.029.247",
+      "discount": "Hemat 25%"
+    },
+  ];
 
   @override
   Widget build(BuildContext context) {
@@ -94,7 +123,7 @@ class _DashboardState extends State<Dashboard> {
                   sectionTitle("Ayo Jelajah Indonesia"),
                   cityTabs(),
                   const SizedBox(height: 15),
-                  
+                  jelajahHotelList(),
                   const SizedBox(height: 30),
                 
                 ],
@@ -145,6 +174,120 @@ class _DashboardState extends State<Dashboard> {
             ),
           );
         },
+      ),
+    );
+  }
+  
+  Widget jelajahHotelList() {
+    return SizedBox(
+      height: 320,
+      child: ListView.builder(
+        scrollDirection: Axis.horizontal,
+        itemCount: jelajahHotel.length,
+        itemBuilder: (context, index) {
+          final hotel = jelajahHotel[index];
+          return Container(
+            width: 260,
+            margin: const EdgeInsets.only(right: 15),
+            decoration: BoxDecoration(
+              color: Colors.white,
+              borderRadius: BorderRadius.circular(16),
+            ),
+            child: Column(
+              crossAxisAlignment: CrossAxisAlignment.start,
+              children: [
+                Stack(
+                  children: [
+                    ClipRRect(
+                      borderRadius: const BorderRadius.vertical(
+                        top: Radius.circular(16),
+                      ),
+                      child: Image.asset(
+                        hotel["image"]!,
+                        height: 150,
+                        width: double.infinity,
+                        fit: BoxFit.cover,
+                      ),
+                    ),
+                    Positioned(
+                      top: 10,
+                      left: 10,
+                      child: chip(hotel["location"]!),
+                    ),
+                    Positioned(
+                      top: 10,
+                      right: 10,
+                      child: discountChip(hotel["discount"]!),
+                    ),
+                  ],
+                ),
+                Padding(
+                  padding: const EdgeInsets.all(12),
+                  child: Column(
+                    crossAxisAlignment: CrossAxisAlignment.start,
+                    children: [
+                      Text(
+                        hotel["name"]!,
+                        maxLines: 2,
+                        overflow: TextOverflow.ellipsis,
+                        style: const TextStyle(
+                          fontWeight: FontWeight.bold,
+                        ),
+                      ),
+                      const SizedBox(height: 6),
+                      Text(
+                        "${hotel["rating"]}/10 • ${hotel["review"]}",
+                        style: const TextStyle(
+                          color: Colors.blue,
+                          fontSize: 12,
+                        ),
+                      ),
+                      const SizedBox(height: 8),
+                      Text(
+                        hotel["price"]!,
+                        style: const TextStyle(
+                          color: Colors.orange,
+                          fontSize: 18,
+                          fontWeight: FontWeight.bold,
+                        ),
+                      ),
+                    ],
+                  ),
+                ),
+              ],
+            ),
+          );
+        },
+      ),
+    );
+  }
+  Widget chip(String text) {
+    return Container(
+      padding: const EdgeInsets.symmetric(horizontal: 8, vertical: 4),
+      decoration: BoxDecoration(
+        color: Colors.blue,
+        borderRadius: BorderRadius.circular(12),
+      ),
+      child: Text(
+        text,
+        style: const TextStyle(color: Colors.white, fontSize: 12),
+      ),
+    );
+  }
+   Widget discountChip(String text) {
+    return Container(
+      padding: const EdgeInsets.symmetric(horizontal: 8, vertical: 4),
+      decoration: BoxDecoration(
+        color: Colors.orange,
+        borderRadius: BorderRadius.circular(12),
+      ),
+      child: Text(
+        text,
+        style: const TextStyle(
+          color: Colors.white,
+          fontSize: 12,
+          fontWeight: FontWeight.bold,
+        ),
       ),
     );
   }
