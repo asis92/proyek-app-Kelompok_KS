@@ -8,7 +8,21 @@ class Dashboard extends StatefulWidget {
 }
 
 class _DashboardState extends State<Dashboard> {
-   
+   int selectedCity = 0;
+
+  final List<String> cities = [
+    "Jakarta",
+    "Bali",
+    "Surabaya",
+    "Bandung",
+    "Yogyakarta",
+    "Bogor",
+    "Semarang",
+    "Solo",
+    "Malang",
+    "Medan",
+  ];
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -78,6 +92,8 @@ class _DashboardState extends State<Dashboard> {
                 children: [
                  
                   sectionTitle("Ayo Jelajah Indonesia"),
+                  cityTabs(),
+                  const SizedBox(height: 15),
                   
                   const SizedBox(height: 30),
                 
@@ -100,6 +116,35 @@ class _DashboardState extends State<Dashboard> {
           fontSize: 20,
           fontWeight: FontWeight.bold,
         ),
+      ),
+    );
+  }
+  
+  Widget cityTabs() {
+    return SizedBox(
+      height: 40,
+      child: ListView.builder(
+        scrollDirection: Axis.horizontal,
+        itemCount: cities.length,
+        itemBuilder: (context, index) {
+          final isActive = selectedCity == index;
+          return Padding(
+            padding: const EdgeInsets.only(right: 8),
+            child: ChoiceChip(
+              label: Text(cities[index]),
+              selected: isActive,
+              selectedColor: Colors.blue,
+              backgroundColor: Colors.white,
+              labelStyle: TextStyle(
+                color: isActive ? Colors.white : Colors.blue,
+                fontWeight: FontWeight.bold,
+              ),
+              onSelected: (_) {
+                setState(() => selectedCity = index);
+              },
+            ),
+          );
+        },
       ),
     );
   }
