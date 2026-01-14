@@ -8,7 +8,7 @@ class Dashboard extends StatefulWidget {
 }
 
 class _DashboardState extends State<Dashboard> {
- 
+   
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -67,10 +67,38 @@ class _DashboardState extends State<Dashboard> {
                     ),
                   ),
                 ],
+
+              ),
+            ),
+            SizedBox(height: 20),
+            Padding(
+              padding: const EdgeInsets.symmetric(horizontal: 20),
+              child: Column(
+                crossAxisAlignment: CrossAxisAlignment.start,
+                children: [
+                 
+                  sectionTitle("Ayo Jelajah Indonesia"),
+                  
+                  const SizedBox(height: 30),
+                
+                ],
               ),
             ),
 
           ],
+        ),
+      ),
+    );
+  }
+  
+   Widget sectionTitle(String title) {
+    return Padding(
+      padding: const EdgeInsets.only(bottom: 12),
+      child: Text(
+        title,
+        style: const TextStyle(
+          fontSize: 20,
+          fontWeight: FontWeight.bold,
         ),
       ),
     );
