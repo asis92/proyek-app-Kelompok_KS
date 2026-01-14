@@ -51,9 +51,18 @@ class _DashboardState extends State<Dashboard> {
       "discount": "Hemat 25%"
     },
   ];
-
+  
+ final List<Map<String, String>> promoHotel = [
+    {"image": "assets/images/promo11.jpg"},
+    {"image": "assets/images/promo2.jpg"},
+    {"image": "assets/images/promo3.jpg"},
+    {"image": "assets/images/promo1.jpg"},
+  ];
+  
+ 
   @override
   Widget build(BuildContext context) {
+     final screenWidth = MediaQuery.of(context).size.width;
     return Scaffold(
       backgroundColor: Colors.grey[100],
 
@@ -125,7 +134,10 @@ class _DashboardState extends State<Dashboard> {
                   const SizedBox(height: 15),
                   jelajahHotelList(),
                   const SizedBox(height: 30),
-                
+                 sectionTitle(
+                    "Booking Hotel & Penginapan Murah dengan Harga Promo",
+                  ),
+                  promoImageList(screenWidth),
                 ],
               ),
             ),
@@ -135,7 +147,28 @@ class _DashboardState extends State<Dashboard> {
       ),
     );
   }
-  
+  Widget promoImageList(double screenWidth) {
+    return SizedBox(
+      height: 160,
+      child: ListView.builder(
+        scrollDirection: Axis.horizontal,
+        itemCount: promoHotel.length,
+        itemBuilder: (context, index) {
+          return Container(
+            width: screenWidth * 0.55, // 👈 SETENGAH LAYAR
+            margin: const EdgeInsets.only(right: 15),
+            decoration: BoxDecoration(
+              borderRadius: BorderRadius.circular(20),
+              image: DecorationImage(
+                image: AssetImage(promoHotel[index]["image"]!),
+                fit: BoxFit.cover,
+              ),
+            ),
+          );
+        },
+      ),
+    );
+  }
    Widget sectionTitle(String title) {
     return Padding(
       padding: const EdgeInsets.only(bottom: 12),
