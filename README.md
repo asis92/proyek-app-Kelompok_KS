@@ -39,11 +39,11 @@ Dengan berbagai fitur pendukung lainnya seperti pemilihan kamar, pemesanan dan l
 ## Screenshots Data Profile
 
 <div align="center">
-  <img src="aplikasi_tor_tor/assets/images/Profileasis.png" alt="Splash Screen" width="200"/>
-  <img src="aplikasi_tor_tor/assets/images/Profilegrafica.png" alt="Splash Screen" width="200"/>
-  <img src="aplikasi_tor_tor/assets/images/Profileyehezkiel.png" alt="Splash Screen" width="200"/>
-  <img src="aplikasi_tor_tor/assets/images/Profileanggie.png" alt="Splash Screen" width="200"/>
-  <img src="aplikasi_tor_tor/assets/images/Profilejejen.png" alt="Splash Screen" width="200"/>
+  <img src="aplikasi_tor_tor/assets/images/Profileasis.png" alt="Profile" width="200"/>
+  <img src="aplikasi_tor_tor/assets/images/Profilegrafica.png" alt="Profile" width="200"/>
+  <img src="aplikasi_tor_tor/assets/images/Profileyehezkiel.png" alt="Profile" width="200"/>
+  <img src="aplikasi_tor_tor/assets/images/Profileanggie.png" alt="Profile" width="200"/>
+  <img src="aplikasi_tor_tor/assets/images/Profilejejen.png" alt="Profile" width="200"/>
 </div>
 
 ## Screenshots Splashscreen
@@ -54,6 +54,18 @@ Dengan berbagai fitur pendukung lainnya seperti pemilihan kamar, pemesanan dan l
   <img src="aplikasi_tor_tor/assets/images/Splashscreenyehezkiel.png" alt="Splash Screen" width="200"/>
   <img src="aplikasi_tor_tor/assets/images/Splashscreenanggie.png" alt="Splash Screen" width="200"/>
   <img src="aplikasi_tor_tor/assets/images/Splashscreenjejen.png" alt="Splash Screen" width="200"/>
+</div>
+
+## Screenshots Login
+
+<div align="center">
+  <img src="aplikasi_tor_tor/assets/images/login.jpeg" alt="Login" width="200"/>
+</div>
+
+## Screenshots Dashboard
+
+<div align="center">
+  <img src="aplikasi_tor_tor/assets/images/dashboard.jpeg" alt="Dashboard" width="200"/>
 </div>
 
 ## Demo Video
