@@ -43,7 +43,7 @@ class SplashScreen4 extends StatelessWidget {
                     ),
                     SizedBox(height: 12),
                     Text(
-                      "Nikmati pengalaman menginap terbaik dengan kenyamanan, \n pelayanan premium, dan lokasi strategis.",
+                      "Nikmati Pengalaman menginap Terbaik Dengan Kenyamanan, \n Pelayanan Premium, dan Lokasi Strategis.",
                       textAlign: TextAlign.center,
                       style: TextStyle(fontSize: 14, color: Colors.grey),
                     ),
