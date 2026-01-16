@@ -1,5 +1,9 @@
 import 'package:flutter/material.dart';
 
+void main() {
+  runApp(const MaterialApp(home: Profile4()));
+}
+
 class Profile4 extends StatelessWidget {
   const Profile4({super.key});
 
