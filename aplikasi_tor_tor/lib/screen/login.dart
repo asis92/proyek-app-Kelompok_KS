@@ -84,6 +84,43 @@ class LoginPage extends StatelessWidget {
                 ),
               ),
               const SizedBox(height: 10),
+
+              // Lupa Password
+              Align(
+                alignment: Alignment.centerRight,
+                child: TextButton(
+                  onPressed: () {
+                    // Aksi lupa password
+                  },
+                  child: const Text(
+                    "Lupa Password?",
+                    style: TextStyle(color: Colors.blueAccent),
+                  ),
+                ),
+              ),
+              const SizedBox(height: 20),
+
+              // Login Button
+              ElevatedButton(
+                onPressed: () {},
+                style: ElevatedButton.styleFrom(
+                  backgroundColor: Colors.lightBlue[700],
+                  foregroundColor: Colors.white,
+                  padding: const EdgeInsets.symmetric(
+                    horizontal: 100,
+                    vertical: 16,
+                  ),
+                  shape: RoundedRectangleBorder(
+                    borderRadius: BorderRadius.circular(12),
+                  ),
+                  elevation: 2,
+                ),
+                child: const Text(
+                  "Login",
+                  style: TextStyle(fontSize: 18, fontWeight: FontWeight.bold),
+                ),
+              ),
+              const SizedBox(height: 30),
             ],
           ),
         ),
