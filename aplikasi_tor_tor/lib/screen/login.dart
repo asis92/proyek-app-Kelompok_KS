@@ -7,7 +7,7 @@ class LoginPage extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       body: SingleChildScrollView(
-        child: Padding(
+        child: Container(
           padding: const EdgeInsets.all(16.0),
           child: Column(
             crossAxisAlignment: CrossAxisAlignment.center,
@@ -162,15 +162,11 @@ class LoginPage extends StatelessWidget {
                 children: [
                   const Text("Belum punya akun? "),
                   TextButton(
-                    onPressed: () {
-                      // Aksi daftar akun
-                    },
+                    onPressed: () {},
                     child: const Text(
                       "Daftar",
                       style: TextStyle(fontWeight: FontWeight.bold),
-                      ),
                     ),
-                ],
                   ),
                 ],
               ),
