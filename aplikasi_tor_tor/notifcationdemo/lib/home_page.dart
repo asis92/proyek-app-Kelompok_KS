@@ -27,8 +27,8 @@ class _MyHomePageState extends State<MyHomePage> {
     try {
       debugPrint("Setting up Firebase Cloud Messaging..."); // Log setup dimulai
 
-//       final FirebaseMessaging messaging =
-//           FirebaseMessaging.instance; // Dapatkan instance FirebaseMessaging
+      final FirebaseMessaging messaging =
+          FirebaseMessaging.instance; // tambah inisialisasi Firebase Messaging
 
 //       // Minta izin notifikasi ke user
 //       await messaging.requestPermission(); // Minta izin notifikasi
