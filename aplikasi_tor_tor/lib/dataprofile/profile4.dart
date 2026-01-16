@@ -4,8 +4,8 @@ void main() {
   runApp(const MaterialApp(home: Profile4()));
 }
 
-class Profile4 extends StatelessWidget {
-  const Profile4({super.key});
+class Profile4page extends StatelessWidget {
+  const Profile4page({super.key});
 
   @override
   Widget build(BuildContext context) {
