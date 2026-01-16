@@ -37,8 +37,8 @@ class _MyHomePageState extends State<MyHomePage> {
       String? token = await messaging.getToken();
       debugPrint("TOKEN SAYA: $token"); // Cetak token ke konsol
 
-//       // Dengarkan pesan masuk saat aplikasi berada di foreground
-//       FirebaseMessaging.onMessage.listen((RemoteMessage message) {
+      // Dengarkan pesan masuk saat aplikasi berada di foreground
+      FirebaseMessaging.onMessage.listen((RemoteMessage message) {
 //         // Dengarkan pesan masuk
 //         if (message.notification != null) {
 //           setState(() {
