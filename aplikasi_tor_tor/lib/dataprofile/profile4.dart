@@ -37,9 +37,18 @@ class Profile4 extends StatelessWidget {
           mainAxisAlignment: MainAxisAlignment.center,
           crossAxisAlignment: CrossAxisAlignment.center,
           children: [
-            const CircleAvatar(
-              radius: 100,
-              backgroundImage: AssetImage('assets/images/anggie.jpeg'),
+            SizedBox(
+              height: 200,
+              width: 200,
+              child: DecoratedBox(
+                decoration: BoxDecoration(
+                  shape: BoxShape.circle,
+                  image: DecorationImage(
+                    image: AssetImage('assets/images/anggie.jpg'),
+                    fit: BoxFit.cover,
+                  ),
+                ),
+              ),
             ),
             const SizedBox(height: 50),
             const Text(
