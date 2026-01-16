@@ -30,8 +30,8 @@ class _MyHomePageState extends State<MyHomePage> {
       final FirebaseMessaging messaging =
           FirebaseMessaging.instance; // tambah inisialisasi Firebase Messaging
 
-//       // Minta izin notifikasi ke user
-//       await messaging.requestPermission(); // Minta izin notifikasi
+      // Minta izin notifikasi ke user
+      await messaging.requestPermission(); 
 
 //       // Ambil token FCM
 //       String? token = await messaging.getToken();
