@@ -18,6 +18,18 @@ class LoginPage extends StatelessWidget {
               // Icon
               const Icon(Icons.lock_outline, size: 80, color: Colors.green),
               const SizedBox(height: 20),
+
+              //Welcome Text
+              const Center(
+                child: Text(
+                  "Welcome",
+                  style: TextStyle(
+                    fontSize: 28,
+                    fontWeight: FontWeight.bold,
+                    color: Colors.green,
+                  ),
+                ),
+              ),
             ],
           ),
         ),
