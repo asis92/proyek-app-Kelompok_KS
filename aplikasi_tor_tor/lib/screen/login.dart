@@ -133,6 +133,7 @@ class LoginPage extends StatelessWidget {
                       style: TextStyle(color: Colors.grey[600]),
                     ),
                   ),
+                  Expanded(child: Divider(color: Colors.grey[300])),
                 ],
               ),
             ],
