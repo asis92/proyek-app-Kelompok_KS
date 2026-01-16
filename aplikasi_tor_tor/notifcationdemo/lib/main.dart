@@ -2,18 +2,35 @@ import 'package:flutter/material.dart';
 import 'home_page.dart'; // import MyHomePage
 
 void main() {
-  runApp(const aplikasi_tor_tor());
+  runApp(const MyHome());
 }
 
-class aplikasi_tor_tor extends StatelessWidget {
-  const aplikasi_tor_tor({super.key});
+class MyHome extends StatelessWidget {
+  const MyHome({super.key});
 
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
       title: 'Notification Demo',
       theme: ThemeData(primarySwatch: Colors.blue),
-      home: const MyHomePage(
+      home: const DashboardPage(),
+      debugShowCheckedModeBanner: false,
+    );
+  }
+}
+
+
+class DashboardPage extends StatelessWidget {
+  const DashboardPage({super.key});
+
+  @override
+  Widget build(BuildContext context) {
+    return Scaffold(
+      appBar: AppBar(
+        title: const Text('Dashboard'),
+        centerTitle: true, 
+      ),
+      body: const MyHomePage(
         title: 'Tugas Kelompok UAS Aplikasi Mobile',
       ),
     );
