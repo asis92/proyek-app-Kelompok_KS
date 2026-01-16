@@ -27,7 +27,10 @@ class Profile4 extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(title: const Text('Profile Anggie Aditya Saputra')),
+      appBar: AppBar(
+        centerTitle: true,
+        title: const Text('Profile Anggie Aditya Saputra'),
+      ),
       body: Padding(
         padding: const EdgeInsets.all(16.0),
         child: Column(
