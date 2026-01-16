@@ -60,6 +60,30 @@ class LoginPage extends StatelessWidget {
                   ),
                 ),
               ),
+              const SizedBox(height: 20),
+
+              // Password Input
+              TextField(
+                obscureText: true,
+                decoration: InputDecoration(
+                  labelText: "Password",
+                  hintText: "Masukkan Password Anda",
+                  prefixIcon: const Icon(Icons.lock_outline),
+                  suffixIcon: const Icon(Icons.visibility_outlined),
+                  border: OutlineInputBorder(
+                    borderRadius: BorderRadius.circular(12),
+                  ),
+                  enabledBorder: OutlineInputBorder(
+                    borderRadius: BorderRadius.circular(12),
+                    borderSide: const BorderSide(color: Colors.grey),
+                  ),
+                  focusedBorder: OutlineInputBorder(
+                    borderRadius: BorderRadius.circular(12),
+                    borderSide: const BorderSide(color: Colors.blueAccent),
+                  ),
+                ),
+              ),
+              const SizedBox(height: 10),
             ],
           ),
         ),
