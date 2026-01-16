@@ -139,6 +139,23 @@ class LoginPage extends StatelessWidget {
               const SizedBox(height: 30),
 
               //Google Login Button
+              OutlinedButton.icon(
+                onPressed: () {},
+                icon: const Icon(Icons.g_mobiledata, color: Colors.grey),
+                label: const Text(
+                  "Login dengan Google",
+                  style: TextStyle(color: Colors.black87),
+                ),
+                style: OutlinedButton.styleFrom(
+                  padding: const EdgeInsets.symmetric(
+                    horizontal: 24,
+                    vertical: 12,
+                  ),
+                  shape: RoundedRectangleBorder(
+                    borderRadius: BorderRadius.circular(12),
+                  ),
+                ),
+              ),
             ],
           ),
         ),
