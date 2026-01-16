@@ -1,4 +1,4 @@
-import 'package:aplikasi_tor_tor/dataprofile/profile4.dart';
+import 'package:aplikasi_tor_tor/screen/splashscreen4.dart';
 import 'package:flutter/material.dart';
 
 void main() {
@@ -18,7 +18,7 @@ class MyApp extends StatelessWidget {
       ),
       debugShowCheckedModeBanner: false,
 
-      home: const Profile4page(), //memanggil nama class splash screen 1
+      home: const SplashScreen4(), //memanggil nama class splash screen 1
     );
   }
 }
