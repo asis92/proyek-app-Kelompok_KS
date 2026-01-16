@@ -27,7 +27,7 @@ class SplashScreen4 extends StatelessWidget {
             ),
             // TEXT CONTENT
             Expanded(
-              flex: 4,
+              flex: 2,
               child: Padding(
                 padding: const EdgeInsets.symmetric(horizontal: 20),
                 child: Column(
