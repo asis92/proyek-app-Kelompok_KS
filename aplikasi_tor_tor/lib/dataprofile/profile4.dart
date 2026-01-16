@@ -32,14 +32,14 @@ class Profile4 extends StatelessWidget {
         title: const Text('Profile Anggie Aditya Saputra'),
       ),
       body: Padding(
-        padding: const EdgeInsets.all(100.0),
+        padding: const EdgeInsets.all(110.0),
         child: Column(
           mainAxisAlignment: MainAxisAlignment.center,
           crossAxisAlignment: CrossAxisAlignment.center,
           children: [
             SizedBox(
-              height: 200,
-              width: 200,
+              height: 150,
+              width: 150,
               child: DecoratedBox(
                 decoration: BoxDecoration(
                   shape: BoxShape.circle,
@@ -57,7 +57,7 @@ class Profile4 extends StatelessWidget {
             ),
             const Text('NIM: 1125170030', style: TextStyle(fontSize: 18)),
             const Text('Kelas: SE 25 KS', style: TextStyle(fontSize: 18)),
-            const Text('Keahlian: Network', style: TextStyle(fontSize: 18)),
+            const Text('Tugas Untuk UAS', style: TextStyle(fontSize: 18)),
           ],
         ),
       ),
