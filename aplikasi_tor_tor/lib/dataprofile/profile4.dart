@@ -40,7 +40,7 @@ class Profile4 extends StatelessWidget {
               radius: 100,
               backgroundImage: AssetImage('assets/images/anggie.jpeg'),
             ),
-            const SizedBox(height: 20),
+            const SizedBox(height: 100),
             const Text(
               'Nama: Anggie Aditya Saputra',
               style: TextStyle(fontSize: 20),
