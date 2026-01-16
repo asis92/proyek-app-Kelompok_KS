@@ -50,6 +50,14 @@ class LoginPage extends StatelessWidget {
                   border: OutlineInputBorder(
                     borderRadius: BorderRadius.circular(12),
                   ),
+                  enabledBorder: OutlineInputBorder(
+                    borderRadius: BorderRadius.circular(12),
+                    borderSide: const BorderSide(color: Colors.grey),
+                  ),
+                  focusedBorder: OutlineInputBorder(
+                    borderRadius: BorderRadius.circular(12),
+                    borderSide: const BorderSide(color: Colors.blueAccent),
+                  ),
                 ),
               ),
             ],
