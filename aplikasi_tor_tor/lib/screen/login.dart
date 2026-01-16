@@ -46,7 +46,7 @@ class LoginPage extends StatelessWidget {
                 decoration: InputDecoration(
                   labelText: "Email",
                   hintText: "Masukkan Email Anda",
-                  prefixIcon: const Icon(Icons.email),
+                  prefixIcon: const Icon(Icons.email_outlined),
                   border: OutlineInputBorder(
                     borderRadius: BorderRadius.circular(12),
                   ),
