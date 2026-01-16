@@ -39,9 +39,9 @@ class _MyHomePageState extends State<MyHomePage> {
 
       // Dengarkan pesan masuk saat aplikasi berada di foreground
       FirebaseMessaging.onMessage.listen((RemoteMessage message) {
-//         // Dengarkan pesan masuk
-//         if (message.notification != null) {
-//           setState(() {
+        // Dengarkan pesan masuk
+        if (message.notification != null) {
+          setState(() {
 //             _message =
 //                 "${message.notification!.title}: ${message.notification!.body}"; // Perbarui pesan dengan judul dan isi notifikasi
 //           });
