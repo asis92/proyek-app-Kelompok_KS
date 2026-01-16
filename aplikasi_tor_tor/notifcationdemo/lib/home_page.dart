@@ -51,7 +51,7 @@ class _MyHomePageState extends State<MyHomePage> {
       debugPrint("Error setting up FCM: $e"); // tambah log error
       debugPrint("Stack trace: $stackTrace"); // tambah log stack trace
 
-//       if (!mounted) return;
+      if (!mounted) return; // Periksa apakah widget masih terpasang
 
 //       setState(() {
 //         _message = "Error setting up FCM: $e";
