@@ -24,8 +24,8 @@ class _MyHomePageState extends State<MyHomePage> {
 
   // Konfigurasi Firebase Cloud Messaging
   Future<void> setupFCM() async {
-//     try {
-//       debugPrint("Setting up Firebase Cloud Messaging..."); // Log setup start
+    try {
+      debugPrint("Setting up Firebase Cloud Messaging..."); // Log setup dimulai
 
 //       final FirebaseMessaging messaging =
 //           FirebaseMessaging.instance; // Dapatkan instance FirebaseMessaging
