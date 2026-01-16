@@ -32,7 +32,7 @@ class Profile4 extends StatelessWidget {
         title: const Text('Profile Anggie Aditya Saputra'),
       ),
       body: Padding(
-        padding: const EdgeInsets.all(125.0),
+        padding: const EdgeInsets.all(100.0),
         child: Column(
           mainAxisAlignment: MainAxisAlignment.center,
           crossAxisAlignment: CrossAxisAlignment.center,
@@ -44,7 +44,7 @@ class Profile4 extends StatelessWidget {
                 decoration: BoxDecoration(
                   shape: BoxShape.circle,
                   image: DecorationImage(
-                    image: AssetImage('assets/images/anggie.jpg'),
+                    image: AssetImage('assets/images/anggie.jpeg'),
                     fit: BoxFit.cover,
                   ),
                 ),
