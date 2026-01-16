@@ -9,6 +9,23 @@ class Profile4 extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    return MaterialApp(
+      debugShowCheckedModeBanner: false,
+      title: 'Anggie Aditya Saputra',
+      theme: ThemeData(
+        useMaterial3: true,
+        colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
+      ),
+      home: const Profile4(),
+    );
+  }
+}
+
+class Profile4 extends StatelessWidget {
+  const Profile4({super.key});
+
+  @override
+  Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(title: const Text('Profile Anggie Aditya Saputra')),
       body: Padding(
