@@ -47,8 +47,8 @@ class _MyHomePageState extends State<MyHomePage> {
           });
         }
       });
-//     } catch (e, stackTrace) {
-//       debugPrint("Error setting up FCM: $e");
+    } catch (e, stackTrace) { // Tangani error jika terjadi
+      // debugPrint("Error setting up FCM: $e"); // Log error
 //       debugPrint("Stack trace: $stackTrace");
 
 //       if (!mounted) return;
