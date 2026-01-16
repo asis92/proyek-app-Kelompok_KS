@@ -35,6 +35,7 @@ class Profile4 extends StatelessWidget {
         padding: const EdgeInsets.all(125.0),
         child: Column(
           mainAxisAlignment: MainAxisAlignment.center,
+          crossAxisAlignment: CrossAxisAlignment.center,
           children: [
             const CircleAvatar(
               radius: 100,
