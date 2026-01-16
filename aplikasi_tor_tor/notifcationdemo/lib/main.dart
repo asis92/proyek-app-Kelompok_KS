@@ -1,23 +1,23 @@
 import 'package:flutter/material.dart';
 import 'home_page.dart'; // import MyHomePage
 
-// void main() {
-//   runApp(const MyHome());
-// }
+void main() {
+  runApp(const MyHome());
+}
 
-// class MyHome extends StatelessWidget {
-//   const MyHome({super.key});
+class MyHome extends StatelessWidget {
+  const MyHome({super.key});
 
-//   @override
-//   Widget build(BuildContext context) {
-//     return MaterialApp(
-//       title: 'Notification Demo',
-//       theme: ThemeData(primarySwatch: Colors.blue),
-//       home: const DashboardPage(),
-//       debugShowCheckedModeBanner: false,
-//     );
-//   }
-// }
+  @override
+  Widget build(BuildContext context) {
+    return MaterialApp(
+      title: 'Notification Demo', // Judul aplikasi
+      theme: ThemeData(primarySwatch: Colors.blue),
+      home: const DashboardPage(),
+      debugShowCheckedModeBanner: false,
+    );
+  }
+}
 
 
 // class DashboardPage extends StatelessWidget {
