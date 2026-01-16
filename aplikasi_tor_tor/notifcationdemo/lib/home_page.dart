@@ -54,10 +54,10 @@ class _MyHomePageState extends State<MyHomePage> {
       if (!mounted) return; // Periksa apakah widget masih terpasang
 
       setState(() { // Perbarui pesan dengan error
-//         _message = "Error setting up FCM: $e";
-//       }); // Log error jika terjadi
-//     }
-//   }
+        _message = "Error setting up FCM: $e"; // tampilkan pesan error
+      });  
+    }
+  }
 
 //   @override
 //   Widget build(BuildContext context) {
