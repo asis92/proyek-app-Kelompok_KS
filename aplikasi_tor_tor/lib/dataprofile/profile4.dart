@@ -50,10 +50,10 @@ class Profile4 extends StatelessWidget {
                 ),
               ),
             ),
-            const SizedBox(height: 50),
+            const SizedBox(height: 25),
             const Text(
               'Nama: Anggie Aditya Saputra',
-              style: TextStyle(fontSize: 20),
+              style: TextStyle(fontSize: 18),
             ),
             const Text('NIM: 1125170030', style: TextStyle(fontSize: 18)),
             const Text('Kelas: SE 25 KS', style: TextStyle(fontSize: 18)),
