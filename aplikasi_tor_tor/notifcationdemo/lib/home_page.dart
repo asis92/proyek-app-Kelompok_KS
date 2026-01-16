@@ -6,9 +6,9 @@ class MyHomePage extends StatefulWidget {
 
   final String title; // tambah title untuk judul
 
-//   @override
-//   State<MyHomePage> createState() => _MyHomePageState(); // ubah menjadi StatefulWidget
-// }
+  @override
+  State<MyHomePage> createState() => _MyHomePageState(); // ubah menjadi StatefulWidget
+}
 
 // class _MyHomePageState extends State<MyHomePage> {
 //   // ubah menjadi State<MyHomePage>
