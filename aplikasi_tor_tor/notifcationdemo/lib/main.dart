@@ -20,16 +20,16 @@ class MyHome extends StatelessWidget {
 }
 
 
-// class DashboardPage extends StatelessWidget {
-//   const DashboardPage({super.key});
+class DashboardPage extends StatelessWidget {
+  const DashboardPage({super.key});
 
-//   @override
-//   Widget build(BuildContext context) {
-//     return Scaffold(
-//       appBar: AppBar(
-//         title: const Text('Dashboard'),
-//         centerTitle: true, 
-//       ),
+  @override
+  Widget build(BuildContext context) {
+    return Scaffold(
+      appBar: AppBar(
+        title: const Text('Dashboard'), // tambah judul AppBar notifikasi
+        centerTitle: true, 
+      ),
 //       body: const MyHomePage(
 //         title: 'Tugas Kelompok UAS Aplikasi Mobile',
 //       ),
