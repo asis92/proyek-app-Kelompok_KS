@@ -15,10 +15,10 @@ class _MyHomePageState extends State<MyHomePage> {
   String _message =
       "No message received yet, waiting..."; // tambah title untuk menampilkan pesan notifikasi
 
-//   @override
-//   void initState() {
-//     // metode initState untuk inisialisasi
-//     super.initState();
+  @override
+  void initState() {
+    // metode initState untuk inisialisasi
+    super.initState();
 //     setupFCM(); // Panggil setupFCM untuk mengatur Firebase Cloud Messaging
 //   }
 
