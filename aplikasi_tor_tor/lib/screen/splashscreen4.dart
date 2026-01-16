@@ -34,7 +34,7 @@ class SplashScreen4 extends StatelessWidget {
                   mainAxisAlignment: MainAxisAlignment.center,
                   children: const [
                     Text(
-                      "Hotel Candra Sari",
+                      "Hotel Candra Sari Yogyakarta",
                       style: TextStyle(
                         fontSize: 22,
                         fontWeight: FontWeight.bold,
