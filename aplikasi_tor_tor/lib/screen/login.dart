@@ -38,6 +38,20 @@ class LoginPage extends StatelessWidget {
                   ],
                 ),
               ),
+              const SizedBox(height: 40),
+
+              // Email Input
+              TextField(
+                keyboardType: TextInputType.emailAddress,
+                decoration: InputDecoration(
+                  labelText: "Email",
+                  hintText: "Masukkan Email Anda",
+                  prefixIcon: const Icon(Icons.email),
+                  border: OutlineInputBorder(
+                    borderRadius: BorderRadius.circular(12),
+                  ),
+                ),
+              ),
             ],
           ),
         ),
