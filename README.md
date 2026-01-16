@@ -56,10 +56,16 @@ Dengan berbagai fitur pendukung lainnya seperti pemilihan kamar, pemesanan dan l
   <img src="aplikasi_tor_tor/assets/images/Splashscreenjejen.png" alt="Splash Screen" width="200"/>
 </div>
 
-## Screenshots Splashscreen
+## Screenshots Login
 
 <div align="center">
   <img src="aplikasi_tor_tor/assets/images/login.jpeg" alt="Login" width="200"/>
+</div>
+
+## Screenshots Dashboard
+
+<div align="center">
+  <img src="aplikasi_tor_tor/assets/images/dashboard.jpeg" alt="Dashboard" width="200"/>
 </div>
 
 ## Demo Video
