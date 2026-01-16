@@ -10,10 +10,10 @@ class MyHomePage extends StatefulWidget {
   State<MyHomePage> createState() => _MyHomePageState(); // ubah menjadi StatefulWidget
 }
 
-// class _MyHomePageState extends State<MyHomePage> {
-//   // ubah menjadi State<MyHomePage>
-//   String _message =
-//       "No message received yet, waiting..."; // Variable to hold the message
+class _MyHomePageState extends State<MyHomePage> {
+  ubah menjadi State<MyHomePage>
+  String _message =
+      "No message received yet, waiting..."; // tambah title untuk menampilkan pesan notifikasi
 
 //   @override
 //   void initState() {
