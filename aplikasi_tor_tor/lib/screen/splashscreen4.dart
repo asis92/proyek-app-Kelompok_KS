@@ -59,17 +59,13 @@ class SplashScreen4 extends StatelessWidget {
                 mainAxisAlignment: MainAxisAlignment.spaceBetween,
                 children: [
                   // Skip
-                  TextButton(
+                  ElevatedButton(
                     onPressed: () {
-                      Navigator.push(
-                        context,
-                        MaterialPageRoute(
-                          builder: (context) => SplashScreen5(),
-                        ),
-                      );
+                      Navigator.pop(context);
                     },
+
                     child: const Text(
-                      "Skip",
+                      "Back",
                       style: TextStyle(color: Colors.grey),
                     ),
                   ),
