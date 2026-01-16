@@ -17,7 +17,7 @@ class SplashScreen4 extends StatelessWidget {
               child: Container(
                 margin: const EdgeInsets.all(10),
                 decoration: BoxDecoration(
-                  borderRadius: BorderRadius.circular(15),
+                  borderRadius: BorderRadius.circular(20),
                   image: const DecorationImage(
                     image: AssetImage('assets/images/wisata_jogya.jpg'),
                     fit: BoxFit.cover,
