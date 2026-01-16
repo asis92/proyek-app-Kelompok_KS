@@ -155,6 +155,23 @@ class LoginPage extends StatelessWidget {
                 ),
               ),
               const SizedBox(height: 30),
+
+              // Register Text
+              Row(
+                mainAxisAlignment: MainAxisAlignment.center,
+                children: [
+                  const Text("Belum punya akun? "),
+                  TextButton(
+                    onPressed: () {
+                      // Aksi daftar akun
+                    },
+                    child: const Text(
+                      "Daftar",
+                      style: TextStyle(color: Colors.blueAccent),
+                    ),
+                  ),
+                ],
+              ),
             ],
           ),
         ),
