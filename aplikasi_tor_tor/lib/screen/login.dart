@@ -167,8 +167,10 @@ class LoginPage extends StatelessWidget {
                     },
                     child: const Text(
                       "Daftar",
-                      style: TextStyle(color: Colors.blueAccent),
+                      style: TextStyle(fontWeight: FontWeight.bold),
+                      ),
                     ),
+                ],
                   ),
                 ],
               ),
