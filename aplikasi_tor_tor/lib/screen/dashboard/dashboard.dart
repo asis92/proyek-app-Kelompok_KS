@@ -32,6 +32,7 @@ class _DashboardState extends State<Dashboard> {
       "price": "Rp 390.770",
       "discount": "Hemat 25%",
     },
+    
     {
       "image": "assets/images/hotel22.jpeg",
       "location": "Senen",
