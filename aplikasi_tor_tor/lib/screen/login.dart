@@ -1,4 +1,3 @@
-import 'package:aplikasi_tor_tor/screen/login.dart';
 import 'package:flutter/material.dart';
 
 class LoginPage extends StatelessWidget {
@@ -21,13 +20,22 @@ class LoginPage extends StatelessWidget {
 
               //Welcome Text
               const Center(
-                child: Text(
-                  "Welcome",
-                  style: TextStyle(
-                    fontSize: 28,
-                    fontWeight: FontWeight.bold,
-                    color: Colors.black,
-                  ),
+                child: Column(
+                  children: [
+                    Text(
+                      "Welcome",
+                      style: TextStyle(
+                        fontSize: 28,
+                        fontWeight: FontWeight.bold,
+                        color: Colors.black,
+                      ),
+                    ),
+                    SizedBox(height: 8),
+                    Text(
+                      "Silahkan Login Untuk Melanjutkan",
+                      style: TextStyle(fontSize: 16, color: Colors.grey),
+                    ),
+                  ],
                 ),
               ),
             ],
