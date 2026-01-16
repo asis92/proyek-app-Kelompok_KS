@@ -30,9 +30,9 @@ class DashboardPage extends StatelessWidget {
         title: const Text('Dashboard'), // tambah judul AppBar notifikasi
         centerTitle: true, 
       ),
-//       body: const MyHomePage(
-//         title: 'Tugas Kelompok UAS Aplikasi Mobile',
-//       ),
-//     );
-//   }
-// }
+      body: const MyHomePage(
+        title: 'Tugas Kelompok UAS Aplikasi Mobile', // tambah judul halaman utama notifikasi
+      ),
+    );
+  }
+}
