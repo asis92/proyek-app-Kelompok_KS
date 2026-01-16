@@ -15,9 +15,9 @@ class SplashScreen4 extends StatelessWidget {
             Expanded(
               flex: 6,
               child: Container(
-                margin: const EdgeInsets.all(20),
+                margin: const EdgeInsets.all(10),
                 decoration: BoxDecoration(
-                  borderRadius: BorderRadius.circular(24),
+                  borderRadius: BorderRadius.circular(20),
                   image: const DecorationImage(
                     image: AssetImage('assets/images/wisata_jogya.jpg'),
                     fit: BoxFit.cover,
@@ -27,24 +27,23 @@ class SplashScreen4 extends StatelessWidget {
             ),
             // TEXT CONTENT
             Expanded(
-              flex: 4,
+              flex: 2,
               child: Padding(
                 padding: const EdgeInsets.symmetric(horizontal: 20),
                 child: Column(
                   mainAxisAlignment: MainAxisAlignment.center,
                   children: const [
                     Text(
-                      "Hotel Candra Sari",
+                      "Hotel Candra Sari Yogyakarta",
                       style: TextStyle(
                         fontSize: 22,
                         fontWeight: FontWeight.bold,
-                        color: Colors.blueAccent,
+                        color: Colors.redAccent,
                       ),
                     ),
                     SizedBox(height: 12),
                     Text(
-                      "Nikmati pengalaman menginap terbaik dengan kenyamanan, "
-                      "pelayanan premium, dan lokasi strategis.",
+                      "Nikmati Pengalaman menginap Terbaik Dengan Kenyamanan, \n Pelayanan Premium, dan Lokasi Strategis.",
                       textAlign: TextAlign.center,
                       style: TextStyle(fontSize: 14, color: Colors.grey),
                     ),
@@ -60,17 +59,13 @@ class SplashScreen4 extends StatelessWidget {
                 mainAxisAlignment: MainAxisAlignment.spaceBetween,
                 children: [
                   // Skip
-                  TextButton(
+                  ElevatedButton(
                     onPressed: () {
-                      Navigator.push(
-                        context,
-                        MaterialPageRoute(
-                          builder: (context) => SplashScreen5(),
-                        ),
-                      );
+                      Navigator.pop(context);
                     },
+
                     child: const Text(
-                      "Skip",
+                      "Back",
                       style: TextStyle(color: Colors.grey),
                     ),
                   ),
@@ -93,7 +88,12 @@ class SplashScreen4 extends StatelessWidget {
                         color: Colors.white,
                       ),
                       onPressed: () {
-                        // Navigator.push(...)
+                        Navigator.push(
+                          context,
+                          MaterialPageRoute(
+                            builder: (context) => SplashScreen5(),
+                          ),
+                        );
                       },
                     ),
                   ),
