@@ -136,6 +136,9 @@ class LoginPage extends StatelessWidget {
                   Expanded(child: Divider(color: Colors.grey[300])),
                 ],
               ),
+              const SizedBox(height: 30),
+
+              //Google Login Button
             ],
           ),
         ),
