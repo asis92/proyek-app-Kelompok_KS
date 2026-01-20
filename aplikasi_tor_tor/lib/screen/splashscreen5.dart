@@ -1,4 +1,4 @@
-import 'package:aplikasi_tor_tor/dataprofile/profile5.dart';
+import 'package:aplikasi_tor_tor/screen/login.dart';
 import 'package:flutter/material.dart';
 import 'package:aplikasi_tor_tor/screen/splashscreen1.dart';
 
@@ -105,9 +105,7 @@ class _SplashScreen5State extends State<SplashScreen5>
                     onPressed: () {
                       Navigator.pushReplacement(
                         context,
-                        MaterialPageRoute(
-                          builder: (context) => Profile5(),
-                        ),
+                        MaterialPageRoute(builder: (context) => LoginPage()),
                       );
                     },
                     style: ElevatedButton.styleFrom(

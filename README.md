@@ -25,16 +25,6 @@ Aplikasi Booking Hotel adalah aplikasi mobile modern yang dikembangkan menggunak
 
 Dengan berbagai fitur pendukung lainnya seperti pemilihan kamar, pemesanan dan lainnya.
 
-### Key Features
-
-- **Modern UI/UX Design** - Antarmuka yang clean dan user-friendly
-- ....
-- ....
-- **Push Notifications** - Reminder untuk catatan penting
-- **Cloud Sync** - Sinkronisasi otomatis dengan Firebase
-- **Dark Mode** - Theme gelap untuk kenyamanan mata
-- ...
-- ...
 
 ## Screenshots Data Profile
 

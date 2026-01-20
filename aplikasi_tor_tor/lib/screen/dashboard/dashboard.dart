@@ -1,3 +1,4 @@
+import 'package:aplikasi_tor_tor/dataprofile/profile1.dart';
 import 'package:flutter/material.dart';
 
 class Dashboard extends StatefulWidget {
@@ -32,7 +33,7 @@ class _DashboardState extends State<Dashboard> {
       "price": "Rp 390.770",
       "discount": "Hemat 25%",
     },
-    
+
     {
       "image": "assets/images/hotel22.jpeg",
       "location": "Senen",
@@ -315,6 +316,18 @@ class _DashboardState extends State<Dashboard> {
           fontWeight: FontWeight.bold,
         ),
       ),
+    );
+    // ignore: dead_code
+    SizedBox(height: 10);
+    ElevatedButton(
+      onPressed: () {
+        Navigator.push(
+          context,
+          MaterialPageRoute(builder: (context) => Card1()),
+        );
+      },
+      style: ElevatedButton.styleFrom(backgroundColor: Colors.green),
+      child: Text("Profile 1", style: TextStyle(fontSize: 15.0)),
     );
   }
 }

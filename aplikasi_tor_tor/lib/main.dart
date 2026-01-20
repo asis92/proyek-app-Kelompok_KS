@@ -1,4 +1,4 @@
-import 'package:aplikasi_tor_tor/screen/login.dart';
+import 'package:aplikasi_tor_tor/screen/splashscreen1.dart';
 import 'package:flutter/material.dart';
 
 void main() {
@@ -18,7 +18,7 @@ class MyApp extends StatelessWidget {
       ),
       debugShowCheckedModeBanner: false,
 
-      home: const LoginPage(), //memanggil nama class splash screen 1
+      home: const Splashscreen1(), //memanggil nama class splash screen 1
     );
   }
 }

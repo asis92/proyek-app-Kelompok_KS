@@ -1,3 +1,9 @@
+import 'package:aplikasi_tor_tor/dataprofile/profile1.dart';
+import 'package:aplikasi_tor_tor/dataprofile/profile2.dart';
+import 'package:aplikasi_tor_tor/dataprofile/profile3.dart';
+import 'package:aplikasi_tor_tor/dataprofile/profile4.dart';
+import 'package:aplikasi_tor_tor/dataprofile/profile5.dart';
+import 'package:aplikasi_tor_tor/screen/dashboard/dashboard.dart';
 import 'package:flutter/material.dart';
 
 class LoginPage extends StatelessWidget {
@@ -102,7 +108,12 @@ class LoginPage extends StatelessWidget {
 
               // Login Button
               ElevatedButton(
-                onPressed: () {},
+                onPressed: () {
+                  Navigator.push(
+                    context,
+                    MaterialPageRoute(builder: (context) => Dashboard()),
+                  );
+                },
                 style: ElevatedButton.styleFrom(
                   backgroundColor: Colors.lightBlue[700],
                   foregroundColor: Colors.white,
@@ -137,14 +148,122 @@ class LoginPage extends StatelessWidget {
                 ],
               ),
               const SizedBox(height: 30),
+              Text(
+                "DAFTAR PROFILE KELOMPOK KS",
+                style: TextStyle(fontSize: 20.0),
+              ),
 
               //Google Login Button
               OutlinedButton.icon(
-                onPressed: () {},
+                onPressed: () {
+                  Navigator.push(
+                    context,
+                    MaterialPageRoute(builder: (context) => Card1()),
+                  );
+                },
                 icon: const Icon(Icons.g_mobiledata, color: Colors.grey),
-                label: const Text(
-                  "Login dengan Google",
-                  style: TextStyle(color: Colors.black87),
+                label: Padding(
+                  padding: const EdgeInsets.all(8.0),
+                  child: const Text(
+                    "Asis Dwi Saputra",
+                    style: TextStyle(color: Colors.black87),
+                  ),
+                ),
+                style: OutlinedButton.styleFrom(
+                  padding: const EdgeInsets.symmetric(vertical: 12),
+                  shape: RoundedRectangleBorder(
+                    borderRadius: BorderRadius.circular(12),
+                  ),
+                  side: BorderSide(color: Colors.grey[300]!),
+                ),
+              ),
+              const SizedBox(height: 30),
+              OutlinedButton.icon(
+                onPressed: () {
+                  Navigator.push(
+                    context,
+                    MaterialPageRoute(builder: (context) => DataProfile2()),
+                  );
+                },
+                icon: const Icon(Icons.g_mobiledata, color: Colors.grey),
+                label: Padding(
+                  padding: const EdgeInsets.all(8.0),
+                  child: const Text(
+                    "Grafica Jati Sugiyarto",
+                    style: TextStyle(color: Colors.black87),
+                  ),
+                ),
+                style: OutlinedButton.styleFrom(
+                  padding: const EdgeInsets.symmetric(vertical: 12),
+                  shape: RoundedRectangleBorder(
+                    borderRadius: BorderRadius.circular(12),
+                  ),
+                  side: BorderSide(color: Colors.grey[300]!),
+                ),
+              ),
+              const SizedBox(height: 30),
+              OutlinedButton.icon(
+                onPressed: () {
+                  Navigator.push(
+                    context,
+                    MaterialPageRoute(builder: (context) => TeamProfilePage()),
+                  );
+                },
+                icon: const Icon(Icons.g_mobiledata, color: Colors.grey),
+                label: Padding(
+                  padding: const EdgeInsets.all(8.0),
+                  child: const Text(
+                    "Yehezkiel Arisandi Bulan",
+                    style: TextStyle(color: Colors.black87),
+                  ),
+                ),
+                style: OutlinedButton.styleFrom(
+                  padding: const EdgeInsets.symmetric(vertical: 12),
+                  shape: RoundedRectangleBorder(
+                    borderRadius: BorderRadius.circular(12),
+                  ),
+                  side: BorderSide(color: Colors.grey[300]!),
+                ),
+              ),
+              const SizedBox(height: 30),
+              OutlinedButton.icon(
+                onPressed: () {
+                  Navigator.push(
+                    context,
+                    MaterialPageRoute(builder: (context) => Profile4page()),
+                  );
+                },
+                icon: const Icon(Icons.g_mobiledata, color: Colors.grey),
+                label: Padding(
+                  padding: const EdgeInsets.all(8.0),
+                  child: const Text(
+                    "Anggie Aditya Saputra",
+                    style: TextStyle(color: Colors.black87),
+                  ),
+                ),
+                style: OutlinedButton.styleFrom(
+                  padding: const EdgeInsets.symmetric(vertical: 12),
+                  shape: RoundedRectangleBorder(
+                    borderRadius: BorderRadius.circular(12),
+                  ),
+                  side: BorderSide(color: Colors.grey[300]!),
+                ),
+              ),
+              const SizedBox(height: 30),
+              OutlinedButton.icon(
+                onPressed: () {
+                  Navigator.push(
+                    context,
+                    MaterialPageRoute(builder: (context) => Profile5()),
+                  );
+                },
+                icon: const Icon(Icons.g_mobiledata, color: Colors.grey),
+                label: Padding(
+                  padding: const EdgeInsets.all(8.0),
+                  child: const Text(
+                    "Jejen Jaenudin",
+                    style: TextStyle(color: Colors.black87),
+                  ),
                 ),
                 style: OutlinedButton.styleFrom(
                   padding: const EdgeInsets.symmetric(vertical: 12),
